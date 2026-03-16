@@ -1,0 +1,294 @@
+{
+  "element_knowledge": {
+    "common_elements": {
+      "H": "氢",
+      "C": "碳",
+      "N": "氮",
+      "O": "氧",
+      "F": "氟",
+      "Cl": "氯",
+      "Br": "溴",
+      "I": "碘",
+      "S": "硫",
+      "P": "磷",
+      "Na": "钠",
+      "K": "钾",
+      "Ca": "钙",
+      "Mg": "镁",
+      "Fe": "铁",
+      "Cu": "铜",
+      "Zn": "锌",
+      "Al": "铝",
+      "Si": "硅",
+      "B": "硼"
+    },
+    "periodic_trends": {
+      "electronegativity": "元素吸引电子的能力",
+      "atomic_radius": "原子大小",
+      "ionization_energy": "失去电子的难易程度"
+    },
+    "bio_relevance": {
+      "C": "生命的基础元素，形成有机化合物",
+      "H": "构成水和有机化合物",
+      "O": "氧化反应，构成水和二氧化碳",
+      "N": "构成蛋白质、DNA和RNA",
+      "P": "构成DNA、RNA和ATP",
+      "S": "构成蛋白质中的半胱氨酸和甲硫氨酸"
+    }
+  },
+  "examples": [
+    {
+      "name": "阿司匹林",
+      "insights": {
+        "smiles": "CC(=O)OC1=CC=CC=C1C(=O)O",
+        "basic_info": {
+          "num_atoms": 13,
+          "num_bonds": 13,
+          "num_rings": 1,
+          "molecular_weight": 180.15899999999996,
+          "formula": "C9H8O4"
+        },
+        "formula_explanation": {
+          "formula": "C9H8O4",
+          "elements": {
+            "C": {
+              "symbol": "C",
+              "count": 9,
+              "chinese_name": "碳",
+              "percentage": 42.9
+            },
+            "H": {
+              "symbol": "H",
+              "count": 8,
+              "chinese_name": "氢",
+              "percentage": 38.1
+            },
+            "O": {
+              "symbol": "O",
+              "count": 4,
+              "chinese_name": "氧",
+              "percentage": 19.0
+            }
+          },
+          "total_atoms": 21,
+          "element_count": 3,
+          "chinese_explanation": [
+            "9个碳原子",
+            "8个氢原子",
+            "4个氧原子"
+          ],
+          "chinese_text": "分子式C9H8O4表示该分子由9个碳原子、8个氢原子、4个氧原子组成。"
+        },
+        "property_explanations": {
+          "mw": {
+            "name": "分子量",
+            "unit": "g/mol",
+            "description": "分子中所有原子的质量总和",
+            "importance": "影响药物的吸收、分布和代谢",
+            "value": 180.16
+          },
+          "logp": {
+            "name": "脂水分配系数",
+            "unit": "logP",
+            "description": "化合物在油水两相中的分配倾向",
+            "importance": "影响药物的生物利用度和细胞膜通透性",
+            "value": 1.19
+          },
+          "tpsa": {
+            "name": "拓扑极性表面积",
+            "unit": "Å²",
+            "description": "分子中所有极性原子(氮、氧、硫等)的表面积",
+            "importance": "影响药物的水溶性和生物活性",
+            "value": 63.6
+          }
+        },
+        "functional_groups": [
+          {
+            "type": "carboxylic_acid",
+            "name": "羧酸基",
+            "description": "具有酸性，可与碱反应",
+            "count": 2
+          },
+          {
+            "type": "ester",
+            "name": "酯基",
+            "description": "羧酸衍生物，具有酯的香味",
+            "count": 2
+          },
+          {
+            "type": "alcohol",
+            "name": "羟基",
+            "description": "具有-OH基团，可形成氢键",
+            "count": 4
+          },
+          {
+            "type": "aromatic",
+            "name": "芳香环",
+            "description": "苯环结构，具有特殊稳定性",
+            "count": 1
+          }
+        ],
+        "user_summary": "这个分子有13个原子，13个化学键。\n分子式C9H8O4表示该分子由9个碳原子、8个氢原子、4个氧原子组成。\n分子量为180.2，表示这个分子相对较小。\n分子中含有以下官能团：羧酸基(2个), 酯基(2个), 羟基(4个), 芳香环(1个)。\n分子性质分析：\n- 分子量: 180.16 g/mol - 分子中所有原子的质量总和\n- 脂水分配系数: 1.19 logP - 化合物在油水两相中的分配倾向\n- 拓扑极性表面积: 63.6 Å² - 分子中所有极性原子(氮、氧、硫等)的表面积"
+      }
+    },
+    {
+      "name": "咖啡因",
+      "insights": {
+        "smiles": "CN1C=NC2=C1C(=O)N(C(=O)N2C)C",
+        "basic_info": {
+          "num_atoms": 14,
+          "num_bonds": 15,
+          "num_rings": 2,
+          "molecular_weight": 194.194,
+          "formula": "C8H10N4O2"
+        },
+        "formula_explanation": {
+          "formula": "C8H10N4O2",
+          "elements": {
+            "C": {
+              "symbol": "C",
+              "count": 8,
+              "chinese_name": "碳",
+              "percentage": 33.3
+            },
+            "H": {
+              "symbol": "H",
+              "count": 10,
+              "chinese_name": "氢",
+              "percentage": 41.7
+            },
+            "N": {
+              "symbol": "N",
+              "count": 4,
+              "chinese_name": "氮",
+              "percentage": 16.7
+            },
+            "O": {
+              "symbol": "O",
+              "count": 2,
+              "chinese_name": "氧",
+              "percentage": 8.3
+            }
+          },
+          "total_atoms": 24,
+          "element_count": 4,
+          "chinese_explanation": [
+            "8个碳原子",
+            "10个氢原子",
+            "4个氮原子",
+            "2个氧原子"
+          ],
+          "chinese_text": "分子式C8H10N4O2表示该分子由8个碳原子、10个氢原子、4个氮原子、2个氧原子组成。"
+        },
+        "property_explanations": {
+          "mw": {
+            "name": "分子量",
+            "unit": "g/mol",
+            "description": "分子中所有原子的质量总和",
+            "importance": "影响药物的吸收、分布和代谢",
+            "value": 194.19
+          },
+          "logp": {
+            "name": "脂水分配系数",
+            "unit": "logP",
+            "description": "化合物在油水两相中的分配倾向",
+            "importance": "影响药物的生物利用度和细胞膜通透性",
+            "value": -0.07
+          },
+          "tpsa": {
+            "name": "拓扑极性表面积",
+            "unit": "Å²",
+            "description": "分子中所有极性原子(氮、氧、硫等)的表面积",
+            "importance": "影响药物的水溶性和生物活性",
+            "value": 58.2
+          }
+        },
+        "functional_groups": [
+          {
+            "type": "alcohol",
+            "name": "羟基",
+            "description": "具有-OH基团，可形成氢键",
+            "count": 2
+          }
+        ],
+        "user_summary": "这个分子有14个原子，15个化学键。\n分子式C8H10N4O2表示该分子由8个碳原子、10个氢原子、4个氮原子、2个氧原子组成。\n分子量为194.2，表示这个分子相对较小。\n分子中含有以下官能团：羟基(2个)。\n分子性质分析：\n- 分子量: 194.19 g/mol - 分子中所有原子的质量总和\n- 脂水分配系数: -0.07 logP - 化合物在油水两相中的分配倾向\n- 拓扑极性表面积: 58.2 Å² - 分子中所有极性原子(氮、氧、硫等)的表面积"
+      }
+    },
+    {
+      "name": "葡萄糖",
+      "insights": {
+        "smiles": "OC[C@H]1OC(O)[C@H](O)[C@@H](O)[C@@H]1O",
+        "basic_info": {
+          "num_atoms": 12,
+          "num_bonds": 12,
+          "num_rings": 1,
+          "molecular_weight": 180.156,
+          "formula": "C6H12O6"
+        },
+        "formula_explanation": {
+          "formula": "C6H12O6",
+          "elements": {
+            "C": {
+              "symbol": "C",
+              "count": 6,
+              "chinese_name": "碳",
+              "percentage": 25.0
+            },
+            "H": {
+              "symbol": "H",
+              "count": 12,
+              "chinese_name": "氢",
+              "percentage": 50.0
+            },
+            "O": {
+              "symbol": "O",
+              "count": 6,
+              "chinese_name": "氧",
+              "percentage": 25.0
+            }
+          },
+          "total_atoms": 24,
+          "element_count": 3,
+          "chinese_explanation": [
+            "6个碳原子",
+            "12个氢原子",
+            "6个氧原子"
+          ],
+          "chinese_text": "分子式C6H12O6表示该分子由6个碳原子、12个氢原子、6个氧原子组成。"
+        },
+        "property_explanations": {
+          "mw": {
+            "name": "分子量",
+            "unit": "g/mol",
+            "description": "分子中所有原子的质量总和",
+            "importance": "影响药物的吸收、分布和代谢",
+            "value": 180.16
+          },
+          "logp": {
+            "name": "脂水分配系数",
+            "unit": "logP",
+            "description": "化合物在油水两相中的分配倾向",
+            "importance": "影响药物的生物利用度和细胞膜通透性",
+            "value": -3.24
+          },
+          "tpsa": {
+            "name": "拓扑极性表面积",
+            "unit": "Å²",
+            "description": "分子中所有极性原子(氮、氧、硫等)的表面积",
+            "importance": "影响药物的水溶性和生物活性",
+            "value": 110.4
+          }
+        },
+        "functional_groups": [
+          {
+            "type": "alcohol",
+            "name": "羟基",
+            "description": "具有-OH基团，可形成氢键",
+            "count": 6
+          }
+        ],
+        "user_summary": "这个分子有12个原子，12个化学键。\n分子式C6H12O6表示该分子由6个碳原子、12个氢原子、6个氧原子组成。\n分子量为180.2，表示这个分子相对较小。\n分子中含有以下官能团：羟基(6个)。\n分子性质分析：\n- 分子量: 180.16 g/mol - 分子中所有原子的质量总和\n- 脂水分配系数: -3.24 logP - 化合物在油水两相中的分配倾向\n- 拓扑极性表面积: 110.4 Å² - 分子中所有极性原子(氮、氧、硫等)的表面积"
+      }
+    }
+  ]
+}

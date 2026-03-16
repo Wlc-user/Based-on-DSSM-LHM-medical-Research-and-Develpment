@@ -1,0 +1,2775 @@
+{
+  "nodes": [
+    {
+      "id": "element_H",
+      "type": "element",
+      "data": {
+        "type": "element",
+        "symbol": "H",
+        "name": "氢",
+        "atomic_number": 1,
+        "period": 1,
+        "group": 1,
+        "electronegativity": 2.2,
+        "common_oxidation_states": [
+          1,
+          -1
+        ]
+      }
+    },
+    {
+      "id": "element_C",
+      "type": "element",
+      "data": {
+        "type": "element",
+        "symbol": "C",
+        "name": "碳",
+        "atomic_number": 6,
+        "period": 2,
+        "group": 14,
+        "electronegativity": 2.55,
+        "common_oxidation_states": [
+          4,
+          2,
+          -4
+        ]
+      }
+    },
+    {
+      "id": "element_N",
+      "type": "element",
+      "data": {
+        "type": "element",
+        "symbol": "N",
+        "name": "氮",
+        "atomic_number": 7,
+        "period": 2,
+        "group": 15,
+        "electronegativity": 3.04,
+        "common_oxidation_states": [
+          5,
+          3,
+          2,
+          1,
+          -3
+        ]
+      }
+    },
+    {
+      "id": "element_O",
+      "type": "element",
+      "data": {
+        "type": "element",
+        "symbol": "O",
+        "name": "氧",
+        "atomic_number": 8,
+        "period": 2,
+        "group": 16,
+        "electronegativity": 3.44,
+        "common_oxidation_states": [
+          2,
+          -2
+        ]
+      }
+    },
+    {
+      "id": "element_F",
+      "type": "element",
+      "data": {
+        "type": "element",
+        "symbol": "F",
+        "name": "氟",
+        "atomic_number": 9,
+        "period": 2,
+        "group": 17,
+        "electronegativity": 3.98,
+        "common_oxidation_states": [
+          -1
+        ]
+      }
+    },
+    {
+      "id": "element_Cl",
+      "type": "element",
+      "data": {
+        "type": "element",
+        "symbol": "Cl",
+        "name": "氯",
+        "atomic_number": 17,
+        "period": 3,
+        "group": 17,
+        "electronegativity": 3.16,
+        "common_oxidation_states": [
+          7,
+          5,
+          3,
+          1,
+          -1
+        ]
+      }
+    },
+    {
+      "id": "element_Br",
+      "type": "element",
+      "data": {
+        "type": "element",
+        "symbol": "Br",
+        "name": "溴",
+        "atomic_number": 35,
+        "period": 4,
+        "group": 17,
+        "electronegativity": 2.96,
+        "common_oxidation_states": [
+          7,
+          5,
+          3,
+          1,
+          -1
+        ]
+      }
+    },
+    {
+      "id": "element_I",
+      "type": "element",
+      "data": {
+        "type": "element",
+        "symbol": "I",
+        "name": "碘",
+        "atomic_number": 53,
+        "period": 5,
+        "group": 17,
+        "electronegativity": 2.66,
+        "common_oxidation_states": [
+          7,
+          5,
+          3,
+          1,
+          -1
+        ]
+      }
+    },
+    {
+      "id": "element_S",
+      "type": "element",
+      "data": {
+        "type": "element",
+        "symbol": "S",
+        "name": "硫",
+        "atomic_number": 16,
+        "period": 3,
+        "group": 16,
+        "electronegativity": 2.58,
+        "common_oxidation_states": [
+          6,
+          4,
+          2,
+          -2
+        ]
+      }
+    },
+    {
+      "id": "element_P",
+      "type": "element",
+      "data": {
+        "type": "element",
+        "symbol": "P",
+        "name": "磷",
+        "atomic_number": 15,
+        "period": 3,
+        "group": 15,
+        "electronegativity": 2.19,
+        "common_oxidation_states": [
+          5,
+          3,
+          -3
+        ]
+      }
+    },
+    {
+      "id": "element_Na",
+      "type": "element",
+      "data": {
+        "type": "element",
+        "symbol": "Na",
+        "name": "钠",
+        "atomic_number": 11,
+        "period": 3,
+        "group": 1,
+        "electronegativity": 0.93,
+        "common_oxidation_states": [
+          1
+        ]
+      }
+    },
+    {
+      "id": "element_K",
+      "type": "element",
+      "data": {
+        "type": "element",
+        "symbol": "K",
+        "name": "钾",
+        "atomic_number": 19,
+        "period": 4,
+        "group": 1,
+        "electronegativity": 0.82,
+        "common_oxidation_states": [
+          1
+        ]
+      }
+    },
+    {
+      "id": "element_Ca",
+      "type": "element",
+      "data": {
+        "type": "element",
+        "symbol": "Ca",
+        "name": "钙",
+        "atomic_number": 20,
+        "period": 4,
+        "group": 2,
+        "electronegativity": 1.0,
+        "common_oxidation_states": [
+          2
+        ]
+      }
+    },
+    {
+      "id": "element_Mg",
+      "type": "element",
+      "data": {
+        "type": "element",
+        "symbol": "Mg",
+        "name": "镁",
+        "atomic_number": 12,
+        "period": 3,
+        "group": 2,
+        "electronegativity": 1.31,
+        "common_oxidation_states": [
+          2
+        ]
+      }
+    },
+    {
+      "id": "element_Fe",
+      "type": "element",
+      "data": {
+        "type": "element",
+        "symbol": "Fe",
+        "name": "铁",
+        "atomic_number": 26,
+        "period": 4,
+        "group": 8,
+        "electronegativity": 1.83,
+        "common_oxidation_states": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "id": "element_Cu",
+      "type": "element",
+      "data": {
+        "type": "element",
+        "symbol": "Cu",
+        "name": "铜",
+        "atomic_number": 29,
+        "period": 4,
+        "group": 11,
+        "electronegativity": 1.9,
+        "common_oxidation_states": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "id": "element_Zn",
+      "type": "element",
+      "data": {
+        "type": "element",
+        "symbol": "Zn",
+        "name": "锌",
+        "atomic_number": 30,
+        "period": 4,
+        "group": 12,
+        "electronegativity": 1.65,
+        "common_oxidation_states": [
+          2
+        ]
+      }
+    },
+    {
+      "id": "element_Al",
+      "type": "element",
+      "data": {
+        "type": "element",
+        "symbol": "Al",
+        "name": "铝",
+        "atomic_number": 13,
+        "period": 3,
+        "group": 13,
+        "electronegativity": 1.61,
+        "common_oxidation_states": [
+          3
+        ]
+      }
+    },
+    {
+      "id": "element_Si",
+      "type": "element",
+      "data": {
+        "type": "element",
+        "symbol": "Si",
+        "name": "硅",
+        "atomic_number": 14,
+        "period": 3,
+        "group": 14,
+        "electronegativity": 1.9,
+        "common_oxidation_states": [
+          4
+        ]
+      }
+    },
+    {
+      "id": "element_B",
+      "type": "element",
+      "data": {
+        "type": "element",
+        "symbol": "B",
+        "name": "硼",
+        "atomic_number": 5,
+        "period": 2,
+        "group": 13,
+        "electronegativity": 2.04,
+        "common_oxidation_states": [
+          3
+        ]
+      }
+    },
+    {
+      "id": "class_organic",
+      "type": "molecule_class",
+      "data": {
+        "type": "molecule_class",
+        "class_id": "organic",
+        "name": "有机化合物",
+        "description": "含碳化合物"
+      }
+    },
+    {
+      "id": "class_inorganic",
+      "type": "molecule_class",
+      "data": {
+        "type": "molecule_class",
+        "class_id": "inorganic",
+        "name": "无机化合物",
+        "description": "不含碳或含碳但不含氢的化合物"
+      }
+    },
+    {
+      "id": "class_drug",
+      "type": "molecule_class",
+      "data": {
+        "type": "molecule_class",
+        "class_id": "drug",
+        "name": "药物分子",
+        "description": "具有药理活性的化合物"
+      }
+    },
+    {
+      "id": "class_natural_product",
+      "type": "molecule_class",
+      "data": {
+        "type": "molecule_class",
+        "class_id": "natural_product",
+        "name": "天然产物",
+        "description": "从生物体中提取的化合物"
+      }
+    },
+    {
+      "id": "class_synthetic",
+      "type": "molecule_class",
+      "data": {
+        "type": "molecule_class",
+        "class_id": "synthetic",
+        "name": "合成化合物",
+        "description": "人工合成的化合物"
+      }
+    },
+    {
+      "id": "class_nsaids",
+      "type": "molecule_subclass",
+      "data": {
+        "type": "molecule_subclass",
+        "class_id": "nsaids",
+        "name": "非甾体抗炎药",
+        "parent": "drug",
+        "description": "如阿司匹林、布洛芬"
+      }
+    },
+    {
+      "id": "class_antibiotics",
+      "type": "molecule_subclass",
+      "data": {
+        "type": "molecule_subclass",
+        "class_id": "antibiotics",
+        "name": "抗生素",
+        "parent": "drug",
+        "description": "如青霉素、红霉素"
+      }
+    },
+    {
+      "id": "class_antiviral",
+      "type": "molecule_subclass",
+      "data": {
+        "type": "molecule_subclass",
+        "class_id": "antiviral",
+        "name": "抗病毒药",
+        "parent": "drug",
+        "description": "如阿昔洛韦"
+      }
+    },
+    {
+      "id": "class_antineoplastic",
+      "type": "molecule_subclass",
+      "data": {
+        "type": "molecule_subclass",
+        "class_id": "antineoplastic",
+        "name": "抗肿瘤药",
+        "parent": "drug",
+        "description": "如顺铂、多柔比星"
+      }
+    },
+    {
+      "id": "class_cardiovascular",
+      "type": "molecule_subclass",
+      "data": {
+        "type": "molecule_subclass",
+        "class_id": "cardiovascular",
+        "name": "心血管药",
+        "parent": "drug",
+        "description": "如硝酸甘油"
+      }
+    },
+    {
+      "id": "class_psychoactive",
+      "type": "molecule_subclass",
+      "data": {
+        "type": "molecule_subclass",
+        "class_id": "psychoactive",
+        "name": "精神药物",
+        "parent": "drug",
+        "description": "如咖啡因、吗啡"
+      }
+    },
+    {
+      "id": "fg_carboxylic_acid",
+      "type": "functional_group",
+      "data": {
+        "type": "functional_group",
+        "fg_id": "carboxylic_acid",
+        "name": "羧酸基",
+        "formula": "COOH",
+        "reactivity": "酸性",
+        "common_reactions": [
+          "酯化",
+          "成盐",
+          "脱羧"
+        ],
+        "polarity": "high"
+      }
+    },
+    {
+      "id": "fg_ester",
+      "type": "functional_group",
+      "data": {
+        "type": "functional_group",
+        "fg_id": "ester",
+        "name": "酯基",
+        "formula": "COOR",
+        "reactivity": "中等",
+        "common_reactions": [
+          "水解",
+          "皂化"
+        ],
+        "polarity": "medium"
+      }
+    },
+    {
+      "id": "fg_amide",
+      "type": "functional_group",
+      "data": {
+        "type": "functional_group",
+        "fg_id": "amide",
+        "name": "酰胺基",
+        "formula": "CONH2",
+        "reactivity": "低",
+        "common_reactions": [
+          "水解"
+        ],
+        "polarity": "high"
+      }
+    },
+    {
+      "id": "fg_alcohol",
+      "type": "functional_group",
+      "data": {
+        "type": "functional_group",
+        "fg_id": "alcohol",
+        "name": "羟基",
+        "formula": "OH",
+        "reactivity": "中等",
+        "common_reactions": [
+          "酯化",
+          "氧化",
+          "脱水"
+        ],
+        "polarity": "high"
+      }
+    },
+    {
+      "id": "fg_amine",
+      "type": "functional_group",
+      "data": {
+        "type": "functional_group",
+        "fg_id": "amine",
+        "name": "氨基",
+        "formula": "NH2",
+        "reactivity": "碱性",
+        "common_reactions": [
+          "成盐",
+          "酰化"
+        ],
+        "polarity": "medium"
+      }
+    },
+    {
+      "id": "fg_aromatic",
+      "type": "functional_group",
+      "data": {
+        "type": "functional_group",
+        "fg_id": "aromatic",
+        "name": "芳香环",
+        "formula": "Ar",
+        "reactivity": "亲电取代",
+        "common_reactions": [
+          "硝化",
+          "卤化",
+          "磺化"
+        ],
+        "polarity": "low"
+      }
+    },
+    {
+      "id": "fg_alkene",
+      "type": "functional_group",
+      "data": {
+        "type": "functional_group",
+        "fg_id": "alkene",
+        "name": "碳碳双键",
+        "formula": "C=C",
+        "reactivity": "高",
+        "common_reactions": [
+          "加成",
+          "氧化"
+        ],
+        "polarity": "low"
+      }
+    },
+    {
+      "id": "fg_alkyne",
+      "type": "functional_group",
+      "data": {
+        "type": "functional_group",
+        "fg_id": "alkyne",
+        "name": "碳碳三键",
+        "formula": "C≡C",
+        "reactivity": "高",
+        "common_reactions": [
+          "加成"
+        ],
+        "polarity": "low"
+      }
+    },
+    {
+      "id": "fg_halogen",
+      "type": "functional_group",
+      "data": {
+        "type": "functional_group",
+        "fg_id": "halogen",
+        "name": "卤素",
+        "formula": "X",
+        "reactivity": "亲核取代",
+        "common_reactions": [
+          "取代",
+          "消除"
+        ],
+        "polarity": "medium"
+      }
+    },
+    {
+      "id": "drug_cat_A",
+      "type": "drug_category",
+      "data": {
+        "type": "drug_category",
+        "category_id": "A",
+        "name": "消化系统和代谢",
+        "description": "治疗消化和代谢疾病的药物"
+      }
+    },
+    {
+      "id": "drug_cat_B",
+      "type": "drug_category",
+      "data": {
+        "type": "drug_category",
+        "category_id": "B",
+        "name": "血液和造血器官",
+        "description": "抗凝血药、造血药等"
+      }
+    },
+    {
+      "id": "drug_cat_C",
+      "type": "drug_category",
+      "data": {
+        "type": "drug_category",
+        "category_id": "C",
+        "name": "心血管系统",
+        "description": "心血管疾病治疗药"
+      }
+    },
+    {
+      "id": "drug_cat_D",
+      "type": "drug_category",
+      "data": {
+        "type": "drug_category",
+        "category_id": "D",
+        "name": "皮肤病用药",
+        "description": "皮肤病治疗药"
+      }
+    },
+    {
+      "id": "drug_cat_G",
+      "type": "drug_category",
+      "data": {
+        "type": "drug_category",
+        "category_id": "G",
+        "name": "泌尿生殖系统和性激素",
+        "description": "泌尿生殖系统药"
+      }
+    },
+    {
+      "id": "drug_cat_H",
+      "type": "drug_category",
+      "data": {
+        "type": "drug_category",
+        "category_id": "H",
+        "name": "全身激素制剂",
+        "description": "激素类药物"
+      }
+    },
+    {
+      "id": "drug_cat_J",
+      "type": "drug_category",
+      "data": {
+        "type": "drug_category",
+        "category_id": "J",
+        "name": "抗感染药",
+        "description": "抗生素、抗病毒药等"
+      }
+    },
+    {
+      "id": "drug_cat_L",
+      "type": "drug_category",
+      "data": {
+        "type": "drug_category",
+        "category_id": "L",
+        "name": "抗肿瘤药和免疫调节剂",
+        "description": "化疗药、免疫抑制剂"
+      }
+    },
+    {
+      "id": "drug_cat_M",
+      "type": "drug_category",
+      "data": {
+        "type": "drug_category",
+        "category_id": "M",
+        "name": "肌肉骨骼系统",
+        "description": "风湿病治疗药"
+      }
+    },
+    {
+      "id": "drug_cat_N",
+      "type": "drug_category",
+      "data": {
+        "type": "drug_category",
+        "category_id": "N",
+        "name": "神经系统",
+        "description": "中枢神经系统药"
+      }
+    },
+    {
+      "id": "drug_cat_P",
+      "type": "drug_category",
+      "data": {
+        "type": "drug_category",
+        "category_id": "P",
+        "name": "抗寄生虫药",
+        "description": "驱虫药等"
+      }
+    },
+    {
+      "id": "drug_cat_R",
+      "type": "drug_category",
+      "data": {
+        "type": "drug_category",
+        "category_id": "R",
+        "name": "呼吸系统",
+        "description": "呼吸道疾病治疗药"
+      }
+    },
+    {
+      "id": "drug_cat_S",
+      "type": "drug_category",
+      "data": {
+        "type": "drug_category",
+        "category_id": "S",
+        "name": "感觉器官",
+        "description": "眼科、耳鼻喉科药"
+      }
+    },
+    {
+      "id": "drug_cat_V",
+      "type": "drug_category",
+      "data": {
+        "type": "drug_category",
+        "category_id": "V",
+        "name": "其他",
+        "description": "其他类别药物"
+      }
+    },
+    {
+      "id": "drug_aspirin",
+      "type": "drug",
+      "data": {
+        "type": "drug",
+        "drug_id": "aspirin",
+        "name": "阿司匹林",
+        "category": "B",
+        "class": "nsaids",
+        "indication": "抗血小板、抗炎"
+      }
+    },
+    {
+      "id": "drug_ibuprofen",
+      "type": "drug",
+      "data": {
+        "type": "drug",
+        "drug_id": "ibuprofen",
+        "name": "布洛芬",
+        "category": "M",
+        "class": "nsaids",
+        "indication": "抗炎、镇痛"
+      }
+    },
+    {
+      "id": "drug_caffeine",
+      "type": "drug",
+      "data": {
+        "type": "drug",
+        "drug_id": "caffeine",
+        "name": "咖啡因",
+        "category": "N",
+        "class": "psychoactive",
+        "indication": "中枢兴奋"
+      }
+    },
+    {
+      "id": "drug_penicillin",
+      "type": "drug",
+      "data": {
+        "type": "drug",
+        "drug_id": "penicillin",
+        "name": "青霉素",
+        "category": "J",
+        "class": "antibiotics",
+        "indication": "抗细菌感染"
+      }
+    },
+    {
+      "id": "prop_mw",
+      "type": "physical",
+      "data": {
+        "prop_id": "mw",
+        "name": "分子量",
+        "unit": "g/mol",
+        "type": "physical",
+        "description": "分子质量"
+      }
+    },
+    {
+      "id": "prop_logp",
+      "type": "physicochemical",
+      "data": {
+        "prop_id": "logp",
+        "name": "脂水分配系数",
+        "unit": "logP",
+        "type": "physicochemical",
+        "description": "疏水性指标"
+      }
+    },
+    {
+      "id": "prop_tpsa",
+      "type": "physicochemical",
+      "data": {
+        "prop_id": "tpsa",
+        "name": "拓扑极性表面积",
+        "unit": "Å²",
+        "type": "physicochemical",
+        "description": "分子极性"
+      }
+    },
+    {
+      "id": "prop_hbd",
+      "type": "structural",
+      "data": {
+        "prop_id": "hbd",
+        "name": "氢键供体数",
+        "unit": "个",
+        "type": "structural",
+        "description": "氢键供体"
+      }
+    },
+    {
+      "id": "prop_hba",
+      "type": "structural",
+      "data": {
+        "prop_id": "hba",
+        "name": "氢键受体数",
+        "unit": "个",
+        "type": "structural",
+        "description": "氢键受体"
+      }
+    },
+    {
+      "id": "prop_rotatable_bonds",
+      "type": "structural",
+      "data": {
+        "prop_id": "rotatable_bonds",
+        "name": "可旋转键数",
+        "unit": "个",
+        "type": "structural",
+        "description": "分子柔性"
+      }
+    },
+    {
+      "id": "prop_aromatic_rings",
+      "type": "structural",
+      "data": {
+        "prop_id": "aromatic_rings",
+        "name": "芳香环数",
+        "unit": "个",
+        "type": "structural",
+        "description": "芳香性"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "element_H",
+      "target": "element_C",
+      "relation": "similar_electronegativity",
+      "data": {
+        "relation": "similar_electronegativity",
+        "weight": 0.6500000000000004
+      }
+    },
+    {
+      "source": "element_H",
+      "target": "element_I",
+      "relation": "similar_electronegativity",
+      "data": {
+        "relation": "similar_electronegativity",
+        "weight": 0.54
+      }
+    },
+    {
+      "source": "element_H",
+      "target": "element_S",
+      "relation": "similar_electronegativity",
+      "data": {
+        "relation": "similar_electronegativity",
+        "weight": 0.6200000000000001
+      }
+    },
+    {
+      "source": "element_H",
+      "target": "element_P",
+      "relation": "similar_electronegativity",
+      "data": {
+        "relation": "similar_electronegativity",
+        "weight": 0.9899999999999998
+      }
+    },
+    {
+      "source": "element_H",
+      "target": "element_Na",
+      "relation": "same_group",
+      "data": {
+        "relation": "same_group"
+      }
+    },
+    {
+      "source": "element_H",
+      "target": "element_K",
+      "relation": "same_group",
+      "data": {
+        "relation": "same_group"
+      }
+    },
+    {
+      "source": "element_H",
+      "target": "element_Fe",
+      "relation": "similar_electronegativity",
+      "data": {
+        "relation": "similar_electronegativity",
+        "weight": 0.6299999999999999
+      }
+    },
+    {
+      "source": "element_H",
+      "target": "element_Cu",
+      "relation": "similar_electronegativity",
+      "data": {
+        "relation": "similar_electronegativity",
+        "weight": 0.6999999999999997
+      }
+    },
+    {
+      "source": "element_H",
+      "target": "element_Si",
+      "relation": "similar_electronegativity",
+      "data": {
+        "relation": "similar_electronegativity",
+        "weight": 0.6999999999999997
+      }
+    },
+    {
+      "source": "element_H",
+      "target": "element_B",
+      "relation": "similar_electronegativity",
+      "data": {
+        "relation": "similar_electronegativity",
+        "weight": 0.8399999999999999
+      }
+    },
+    {
+      "source": "element_C",
+      "target": "element_H",
+      "relation": "similar_electronegativity",
+      "data": {
+        "relation": "similar_electronegativity",
+        "weight": 0.6500000000000004
+      }
+    },
+    {
+      "source": "element_C",
+      "target": "element_N",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period",
+        "weight": 0.5099999999999998
+      }
+    },
+    {
+      "source": "element_C",
+      "target": "element_O",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period"
+      }
+    },
+    {
+      "source": "element_C",
+      "target": "element_F",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period"
+      }
+    },
+    {
+      "source": "element_C",
+      "target": "element_Br",
+      "relation": "similar_electronegativity",
+      "data": {
+        "relation": "similar_electronegativity",
+        "weight": 0.5899999999999999
+      }
+    },
+    {
+      "source": "element_C",
+      "target": "element_I",
+      "relation": "similar_electronegativity",
+      "data": {
+        "relation": "similar_electronegativity",
+        "weight": 0.8899999999999997
+      }
+    },
+    {
+      "source": "element_C",
+      "target": "element_S",
+      "relation": "similar_electronegativity",
+      "data": {
+        "relation": "similar_electronegativity",
+        "weight": 0.9699999999999998
+      }
+    },
+    {
+      "source": "element_C",
+      "target": "element_P",
+      "relation": "similar_electronegativity",
+      "data": {
+        "relation": "similar_electronegativity",
+        "weight": 0.6400000000000001
+      }
+    },
+    {
+      "source": "element_C",
+      "target": "element_Si",
+      "relation": "same_group",
+      "data": {
+        "relation": "same_group"
+      }
+    },
+    {
+      "source": "element_C",
+      "target": "element_B",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period"
+      }
+    },
+    {
+      "source": "element_N",
+      "target": "element_C",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period",
+        "weight": 0.5099999999999998
+      }
+    },
+    {
+      "source": "element_N",
+      "target": "element_O",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period",
+        "weight": 0.6000000000000001
+      }
+    },
+    {
+      "source": "element_N",
+      "target": "element_F",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period"
+      }
+    },
+    {
+      "source": "element_N",
+      "target": "element_Cl",
+      "relation": "similar_electronegativity",
+      "data": {
+        "relation": "similar_electronegativity",
+        "weight": 0.8799999999999999
+      }
+    },
+    {
+      "source": "element_N",
+      "target": "element_Br",
+      "relation": "similar_electronegativity",
+      "data": {
+        "relation": "similar_electronegativity",
+        "weight": 0.9199999999999999
+      }
+    },
+    {
+      "source": "element_N",
+      "target": "element_I",
+      "relation": "similar_electronegativity",
+      "data": {
+        "relation": "similar_electronegativity",
+        "weight": 0.6200000000000001
+      }
+    },
+    {
+      "source": "element_N",
+      "target": "element_S",
+      "relation": "similar_electronegativity",
+      "data": {
+        "relation": "similar_electronegativity",
+        "weight": 0.54
+      }
+    },
+    {
+      "source": "element_N",
+      "target": "element_P",
+      "relation": "same_group",
+      "data": {
+        "relation": "same_group"
+      }
+    },
+    {
+      "source": "element_N",
+      "target": "element_B",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period"
+      }
+    },
+    {
+      "source": "element_O",
+      "target": "element_C",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period"
+      }
+    },
+    {
+      "source": "element_O",
+      "target": "element_N",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period",
+        "weight": 0.6000000000000001
+      }
+    },
+    {
+      "source": "element_O",
+      "target": "element_F",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period"
+      }
+    },
+    {
+      "source": "element_O",
+      "target": "element_Cl",
+      "relation": "similar_electronegativity",
+      "data": {
+        "relation": "similar_electronegativity",
+        "weight": 0.7200000000000002
+      }
+    },
+    {
+      "source": "element_O",
+      "target": "element_Br",
+      "relation": "similar_electronegativity",
+      "data": {
+        "relation": "similar_electronegativity",
+        "weight": 0.52
+      }
+    },
+    {
+      "source": "element_O",
+      "target": "element_S",
+      "relation": "same_group",
+      "data": {
+        "relation": "same_group"
+      }
+    },
+    {
+      "source": "element_O",
+      "target": "element_B",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period"
+      }
+    },
+    {
+      "source": "element_F",
+      "target": "element_C",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period"
+      }
+    },
+    {
+      "source": "element_F",
+      "target": "element_N",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period"
+      }
+    },
+    {
+      "source": "element_F",
+      "target": "element_O",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period"
+      }
+    },
+    {
+      "source": "element_F",
+      "target": "element_Cl",
+      "relation": "same_group",
+      "data": {
+        "relation": "same_group"
+      }
+    },
+    {
+      "source": "element_F",
+      "target": "element_Br",
+      "relation": "same_group",
+      "data": {
+        "relation": "same_group"
+      }
+    },
+    {
+      "source": "element_F",
+      "target": "element_I",
+      "relation": "same_group",
+      "data": {
+        "relation": "same_group"
+      }
+    },
+    {
+      "source": "element_F",
+      "target": "element_B",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period"
+      }
+    },
+    {
+      "source": "element_Cl",
+      "target": "element_N",
+      "relation": "similar_electronegativity",
+      "data": {
+        "relation": "similar_electronegativity",
+        "weight": 0.8799999999999999
+      }
+    },
+    {
+      "source": "element_Cl",
+      "target": "element_O",
+      "relation": "similar_electronegativity",
+      "data": {
+        "relation": "similar_electronegativity",
+        "weight": 0.7200000000000002
+      }
+    },
+    {
+      "source": "element_Cl",
+      "target": "element_F",
+      "relation": "same_group",
+      "data": {
+        "relation": "same_group"
+      }
+    },
+    {
+      "source": "element_Cl",
+      "target": "element_Br",
+      "relation": "same_group",
+      "data": {
+        "relation": "same_group",
+        "weight": 0.7999999999999998
+      }
+    },
+    {
+      "source": "element_Cl",
+      "target": "element_I",
+      "relation": "same_group",
+      "data": {
+        "relation": "same_group"
+      }
+    },
+    {
+      "source": "element_Cl",
+      "target": "element_S",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period"
+      }
+    },
+    {
+      "source": "element_Cl",
+      "target": "element_P",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period"
+      }
+    },
+    {
+      "source": "element_Cl",
+      "target": "element_Na",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period"
+      }
+    },
+    {
+      "source": "element_Cl",
+      "target": "element_Mg",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period"
+      }
+    },
+    {
+      "source": "element_Cl",
+      "target": "element_Al",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period"
+      }
+    },
+    {
+      "source": "element_Cl",
+      "target": "element_Si",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period"
+      }
+    },
+    {
+      "source": "element_Br",
+      "target": "element_C",
+      "relation": "similar_electronegativity",
+      "data": {
+        "relation": "similar_electronegativity",
+        "weight": 0.5899999999999999
+      }
+    },
+    {
+      "source": "element_Br",
+      "target": "element_N",
+      "relation": "similar_electronegativity",
+      "data": {
+        "relation": "similar_electronegativity",
+        "weight": 0.9199999999999999
+      }
+    },
+    {
+      "source": "element_Br",
+      "target": "element_O",
+      "relation": "similar_electronegativity",
+      "data": {
+        "relation": "similar_electronegativity",
+        "weight": 0.52
+      }
+    },
+    {
+      "source": "element_Br",
+      "target": "element_F",
+      "relation": "same_group",
+      "data": {
+        "relation": "same_group"
+      }
+    },
+    {
+      "source": "element_Br",
+      "target": "element_Cl",
+      "relation": "same_group",
+      "data": {
+        "relation": "same_group",
+        "weight": 0.7999999999999998
+      }
+    },
+    {
+      "source": "element_Br",
+      "target": "element_I",
+      "relation": "same_group",
+      "data": {
+        "relation": "same_group",
+        "weight": 0.7000000000000002
+      }
+    },
+    {
+      "source": "element_Br",
+      "target": "element_S",
+      "relation": "similar_electronegativity",
+      "data": {
+        "relation": "similar_electronegativity",
+        "weight": 0.6200000000000001
+      }
+    },
+    {
+      "source": "element_Br",
+      "target": "element_K",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period"
+      }
+    },
+    {
+      "source": "element_Br",
+      "target": "element_Ca",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period"
+      }
+    },
+    {
+      "source": "element_Br",
+      "target": "element_Fe",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period"
+      }
+    },
+    {
+      "source": "element_Br",
+      "target": "element_Cu",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period"
+      }
+    },
+    {
+      "source": "element_Br",
+      "target": "element_Zn",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period"
+      }
+    },
+    {
+      "source": "element_I",
+      "target": "element_H",
+      "relation": "similar_electronegativity",
+      "data": {
+        "relation": "similar_electronegativity",
+        "weight": 0.54
+      }
+    },
+    {
+      "source": "element_I",
+      "target": "element_C",
+      "relation": "similar_electronegativity",
+      "data": {
+        "relation": "similar_electronegativity",
+        "weight": 0.8899999999999997
+      }
+    },
+    {
+      "source": "element_I",
+      "target": "element_N",
+      "relation": "similar_electronegativity",
+      "data": {
+        "relation": "similar_electronegativity",
+        "weight": 0.6200000000000001
+      }
+    },
+    {
+      "source": "element_I",
+      "target": "element_F",
+      "relation": "same_group",
+      "data": {
+        "relation": "same_group"
+      }
+    },
+    {
+      "source": "element_I",
+      "target": "element_Cl",
+      "relation": "same_group",
+      "data": {
+        "relation": "same_group"
+      }
+    },
+    {
+      "source": "element_I",
+      "target": "element_Br",
+      "relation": "same_group",
+      "data": {
+        "relation": "same_group",
+        "weight": 0.7000000000000002
+      }
+    },
+    {
+      "source": "element_I",
+      "target": "element_S",
+      "relation": "similar_electronegativity",
+      "data": {
+        "relation": "similar_electronegativity",
+        "weight": 0.9199999999999999
+      }
+    },
+    {
+      "source": "element_I",
+      "target": "element_P",
+      "relation": "similar_electronegativity",
+      "data": {
+        "relation": "similar_electronegativity",
+        "weight": 0.5299999999999998
+      }
+    },
+    {
+      "source": "element_S",
+      "target": "element_H",
+      "relation": "similar_electronegativity",
+      "data": {
+        "relation": "similar_electronegativity",
+        "weight": 0.6200000000000001
+      }
+    },
+    {
+      "source": "element_S",
+      "target": "element_C",
+      "relation": "similar_electronegativity",
+      "data": {
+        "relation": "similar_electronegativity",
+        "weight": 0.9699999999999998
+      }
+    },
+    {
+      "source": "element_S",
+      "target": "element_N",
+      "relation": "similar_electronegativity",
+      "data": {
+        "relation": "similar_electronegativity",
+        "weight": 0.54
+      }
+    },
+    {
+      "source": "element_S",
+      "target": "element_O",
+      "relation": "same_group",
+      "data": {
+        "relation": "same_group"
+      }
+    },
+    {
+      "source": "element_S",
+      "target": "element_Cl",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period"
+      }
+    },
+    {
+      "source": "element_S",
+      "target": "element_Br",
+      "relation": "similar_electronegativity",
+      "data": {
+        "relation": "similar_electronegativity",
+        "weight": 0.6200000000000001
+      }
+    },
+    {
+      "source": "element_S",
+      "target": "element_I",
+      "relation": "similar_electronegativity",
+      "data": {
+        "relation": "similar_electronegativity",
+        "weight": 0.9199999999999999
+      }
+    },
+    {
+      "source": "element_S",
+      "target": "element_P",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period",
+        "weight": 0.6099999999999999
+      }
+    },
+    {
+      "source": "element_S",
+      "target": "element_Na",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period"
+      }
+    },
+    {
+      "source": "element_S",
+      "target": "element_Mg",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period"
+      }
+    },
+    {
+      "source": "element_S",
+      "target": "element_Al",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period"
+      }
+    },
+    {
+      "source": "element_S",
+      "target": "element_Si",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period"
+      }
+    },
+    {
+      "source": "element_P",
+      "target": "element_H",
+      "relation": "similar_electronegativity",
+      "data": {
+        "relation": "similar_electronegativity",
+        "weight": 0.9899999999999998
+      }
+    },
+    {
+      "source": "element_P",
+      "target": "element_C",
+      "relation": "similar_electronegativity",
+      "data": {
+        "relation": "similar_electronegativity",
+        "weight": 0.6400000000000001
+      }
+    },
+    {
+      "source": "element_P",
+      "target": "element_N",
+      "relation": "same_group",
+      "data": {
+        "relation": "same_group"
+      }
+    },
+    {
+      "source": "element_P",
+      "target": "element_Cl",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period"
+      }
+    },
+    {
+      "source": "element_P",
+      "target": "element_I",
+      "relation": "similar_electronegativity",
+      "data": {
+        "relation": "similar_electronegativity",
+        "weight": 0.5299999999999998
+      }
+    },
+    {
+      "source": "element_P",
+      "target": "element_S",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period",
+        "weight": 0.6099999999999999
+      }
+    },
+    {
+      "source": "element_P",
+      "target": "element_Na",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period"
+      }
+    },
+    {
+      "source": "element_P",
+      "target": "element_Mg",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period"
+      }
+    },
+    {
+      "source": "element_P",
+      "target": "element_Fe",
+      "relation": "similar_electronegativity",
+      "data": {
+        "relation": "similar_electronegativity",
+        "weight": 0.6400000000000001
+      }
+    },
+    {
+      "source": "element_P",
+      "target": "element_Cu",
+      "relation": "similar_electronegativity",
+      "data": {
+        "relation": "similar_electronegativity",
+        "weight": 0.71
+      }
+    },
+    {
+      "source": "element_P",
+      "target": "element_Al",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period"
+      }
+    },
+    {
+      "source": "element_P",
+      "target": "element_Si",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period",
+        "weight": 0.71
+      }
+    },
+    {
+      "source": "element_P",
+      "target": "element_B",
+      "relation": "similar_electronegativity",
+      "data": {
+        "relation": "similar_electronegativity",
+        "weight": 0.8500000000000001
+      }
+    },
+    {
+      "source": "element_Na",
+      "target": "element_H",
+      "relation": "same_group",
+      "data": {
+        "relation": "same_group"
+      }
+    },
+    {
+      "source": "element_Na",
+      "target": "element_Cl",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period"
+      }
+    },
+    {
+      "source": "element_Na",
+      "target": "element_S",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period"
+      }
+    },
+    {
+      "source": "element_Na",
+      "target": "element_P",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period"
+      }
+    },
+    {
+      "source": "element_Na",
+      "target": "element_K",
+      "relation": "same_group",
+      "data": {
+        "relation": "same_group",
+        "weight": 0.8899999999999999
+      }
+    },
+    {
+      "source": "element_Na",
+      "target": "element_Ca",
+      "relation": "similar_electronegativity",
+      "data": {
+        "relation": "similar_electronegativity",
+        "weight": 0.93
+      }
+    },
+    {
+      "source": "element_Na",
+      "target": "element_Mg",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period",
+        "weight": 0.62
+      }
+    },
+    {
+      "source": "element_Na",
+      "target": "element_Al",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period"
+      }
+    },
+    {
+      "source": "element_Na",
+      "target": "element_Si",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period"
+      }
+    },
+    {
+      "source": "element_K",
+      "target": "element_H",
+      "relation": "same_group",
+      "data": {
+        "relation": "same_group"
+      }
+    },
+    {
+      "source": "element_K",
+      "target": "element_Br",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period"
+      }
+    },
+    {
+      "source": "element_K",
+      "target": "element_Na",
+      "relation": "same_group",
+      "data": {
+        "relation": "same_group",
+        "weight": 0.8899999999999999
+      }
+    },
+    {
+      "source": "element_K",
+      "target": "element_Ca",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period",
+        "weight": 0.82
+      }
+    },
+    {
+      "source": "element_K",
+      "target": "element_Mg",
+      "relation": "similar_electronegativity",
+      "data": {
+        "relation": "similar_electronegativity",
+        "weight": 0.5099999999999999
+      }
+    },
+    {
+      "source": "element_K",
+      "target": "element_Fe",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period"
+      }
+    },
+    {
+      "source": "element_K",
+      "target": "element_Cu",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period"
+      }
+    },
+    {
+      "source": "element_K",
+      "target": "element_Zn",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period"
+      }
+    },
+    {
+      "source": "element_Ca",
+      "target": "element_Br",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period"
+      }
+    },
+    {
+      "source": "element_Ca",
+      "target": "element_Na",
+      "relation": "similar_electronegativity",
+      "data": {
+        "relation": "similar_electronegativity",
+        "weight": 0.93
+      }
+    },
+    {
+      "source": "element_Ca",
+      "target": "element_K",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period",
+        "weight": 0.82
+      }
+    },
+    {
+      "source": "element_Ca",
+      "target": "element_Mg",
+      "relation": "same_group",
+      "data": {
+        "relation": "same_group",
+        "weight": 0.69
+      }
+    },
+    {
+      "source": "element_Ca",
+      "target": "element_Fe",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period"
+      }
+    },
+    {
+      "source": "element_Ca",
+      "target": "element_Cu",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period"
+      }
+    },
+    {
+      "source": "element_Ca",
+      "target": "element_Zn",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period"
+      }
+    },
+    {
+      "source": "element_Mg",
+      "target": "element_Cl",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period"
+      }
+    },
+    {
+      "source": "element_Mg",
+      "target": "element_S",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period"
+      }
+    },
+    {
+      "source": "element_Mg",
+      "target": "element_P",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period"
+      }
+    },
+    {
+      "source": "element_Mg",
+      "target": "element_Na",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period",
+        "weight": 0.62
+      }
+    },
+    {
+      "source": "element_Mg",
+      "target": "element_K",
+      "relation": "similar_electronegativity",
+      "data": {
+        "relation": "similar_electronegativity",
+        "weight": 0.5099999999999999
+      }
+    },
+    {
+      "source": "element_Mg",
+      "target": "element_Ca",
+      "relation": "same_group",
+      "data": {
+        "relation": "same_group",
+        "weight": 0.69
+      }
+    },
+    {
+      "source": "element_Mg",
+      "target": "element_Zn",
+      "relation": "similar_electronegativity",
+      "data": {
+        "relation": "similar_electronegativity",
+        "weight": 0.6600000000000001
+      }
+    },
+    {
+      "source": "element_Mg",
+      "target": "element_Al",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period",
+        "weight": 0.7
+      }
+    },
+    {
+      "source": "element_Mg",
+      "target": "element_Si",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period"
+      }
+    },
+    {
+      "source": "element_Fe",
+      "target": "element_H",
+      "relation": "similar_electronegativity",
+      "data": {
+        "relation": "similar_electronegativity",
+        "weight": 0.6299999999999999
+      }
+    },
+    {
+      "source": "element_Fe",
+      "target": "element_Br",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period"
+      }
+    },
+    {
+      "source": "element_Fe",
+      "target": "element_P",
+      "relation": "similar_electronegativity",
+      "data": {
+        "relation": "similar_electronegativity",
+        "weight": 0.6400000000000001
+      }
+    },
+    {
+      "source": "element_Fe",
+      "target": "element_K",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period"
+      }
+    },
+    {
+      "source": "element_Fe",
+      "target": "element_Ca",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period"
+      }
+    },
+    {
+      "source": "element_Fe",
+      "target": "element_Cu",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period",
+        "weight": 0.9300000000000002
+      }
+    },
+    {
+      "source": "element_Fe",
+      "target": "element_Zn",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period",
+        "weight": 0.8199999999999998
+      }
+    },
+    {
+      "source": "element_Fe",
+      "target": "element_Al",
+      "relation": "similar_electronegativity",
+      "data": {
+        "relation": "similar_electronegativity",
+        "weight": 0.78
+      }
+    },
+    {
+      "source": "element_Fe",
+      "target": "element_Si",
+      "relation": "similar_electronegativity",
+      "data": {
+        "relation": "similar_electronegativity",
+        "weight": 0.9300000000000002
+      }
+    },
+    {
+      "source": "element_Fe",
+      "target": "element_B",
+      "relation": "similar_electronegativity",
+      "data": {
+        "relation": "similar_electronegativity",
+        "weight": 0.79
+      }
+    },
+    {
+      "source": "element_Cu",
+      "target": "element_H",
+      "relation": "similar_electronegativity",
+      "data": {
+        "relation": "similar_electronegativity",
+        "weight": 0.6999999999999997
+      }
+    },
+    {
+      "source": "element_Cu",
+      "target": "element_Br",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period"
+      }
+    },
+    {
+      "source": "element_Cu",
+      "target": "element_P",
+      "relation": "similar_electronegativity",
+      "data": {
+        "relation": "similar_electronegativity",
+        "weight": 0.71
+      }
+    },
+    {
+      "source": "element_Cu",
+      "target": "element_K",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period"
+      }
+    },
+    {
+      "source": "element_Cu",
+      "target": "element_Ca",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period"
+      }
+    },
+    {
+      "source": "element_Cu",
+      "target": "element_Fe",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period",
+        "weight": 0.9300000000000002
+      }
+    },
+    {
+      "source": "element_Cu",
+      "target": "element_Zn",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period",
+        "weight": 0.75
+      }
+    },
+    {
+      "source": "element_Cu",
+      "target": "element_Al",
+      "relation": "similar_electronegativity",
+      "data": {
+        "relation": "similar_electronegativity",
+        "weight": 0.7100000000000002
+      }
+    },
+    {
+      "source": "element_Cu",
+      "target": "element_Si",
+      "relation": "similar_electronegativity",
+      "data": {
+        "relation": "similar_electronegativity",
+        "weight": 1.0
+      }
+    },
+    {
+      "source": "element_Cu",
+      "target": "element_B",
+      "relation": "similar_electronegativity",
+      "data": {
+        "relation": "similar_electronegativity",
+        "weight": 0.8599999999999999
+      }
+    },
+    {
+      "source": "element_Zn",
+      "target": "element_Br",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period"
+      }
+    },
+    {
+      "source": "element_Zn",
+      "target": "element_K",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period"
+      }
+    },
+    {
+      "source": "element_Zn",
+      "target": "element_Ca",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period"
+      }
+    },
+    {
+      "source": "element_Zn",
+      "target": "element_Mg",
+      "relation": "similar_electronegativity",
+      "data": {
+        "relation": "similar_electronegativity",
+        "weight": 0.6600000000000001
+      }
+    },
+    {
+      "source": "element_Zn",
+      "target": "element_Fe",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period",
+        "weight": 0.8199999999999998
+      }
+    },
+    {
+      "source": "element_Zn",
+      "target": "element_Cu",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period",
+        "weight": 0.75
+      }
+    },
+    {
+      "source": "element_Zn",
+      "target": "element_Al",
+      "relation": "similar_electronegativity",
+      "data": {
+        "relation": "similar_electronegativity",
+        "weight": 0.9600000000000002
+      }
+    },
+    {
+      "source": "element_Zn",
+      "target": "element_Si",
+      "relation": "similar_electronegativity",
+      "data": {
+        "relation": "similar_electronegativity",
+        "weight": 0.75
+      }
+    },
+    {
+      "source": "element_Zn",
+      "target": "element_B",
+      "relation": "similar_electronegativity",
+      "data": {
+        "relation": "similar_electronegativity",
+        "weight": 0.6099999999999999
+      }
+    },
+    {
+      "source": "element_Al",
+      "target": "element_Cl",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period"
+      }
+    },
+    {
+      "source": "element_Al",
+      "target": "element_S",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period"
+      }
+    },
+    {
+      "source": "element_Al",
+      "target": "element_P",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period"
+      }
+    },
+    {
+      "source": "element_Al",
+      "target": "element_Na",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period"
+      }
+    },
+    {
+      "source": "element_Al",
+      "target": "element_Mg",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period",
+        "weight": 0.7
+      }
+    },
+    {
+      "source": "element_Al",
+      "target": "element_Fe",
+      "relation": "similar_electronegativity",
+      "data": {
+        "relation": "similar_electronegativity",
+        "weight": 0.78
+      }
+    },
+    {
+      "source": "element_Al",
+      "target": "element_Cu",
+      "relation": "similar_electronegativity",
+      "data": {
+        "relation": "similar_electronegativity",
+        "weight": 0.7100000000000002
+      }
+    },
+    {
+      "source": "element_Al",
+      "target": "element_Zn",
+      "relation": "similar_electronegativity",
+      "data": {
+        "relation": "similar_electronegativity",
+        "weight": 0.9600000000000002
+      }
+    },
+    {
+      "source": "element_Al",
+      "target": "element_Si",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period",
+        "weight": 0.7100000000000002
+      }
+    },
+    {
+      "source": "element_Al",
+      "target": "element_B",
+      "relation": "same_group",
+      "data": {
+        "relation": "same_group",
+        "weight": 0.5700000000000001
+      }
+    },
+    {
+      "source": "element_Si",
+      "target": "element_H",
+      "relation": "similar_electronegativity",
+      "data": {
+        "relation": "similar_electronegativity",
+        "weight": 0.6999999999999997
+      }
+    },
+    {
+      "source": "element_Si",
+      "target": "element_C",
+      "relation": "same_group",
+      "data": {
+        "relation": "same_group"
+      }
+    },
+    {
+      "source": "element_Si",
+      "target": "element_Cl",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period"
+      }
+    },
+    {
+      "source": "element_Si",
+      "target": "element_S",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period"
+      }
+    },
+    {
+      "source": "element_Si",
+      "target": "element_P",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period",
+        "weight": 0.71
+      }
+    },
+    {
+      "source": "element_Si",
+      "target": "element_Na",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period"
+      }
+    },
+    {
+      "source": "element_Si",
+      "target": "element_Mg",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period"
+      }
+    },
+    {
+      "source": "element_Si",
+      "target": "element_Fe",
+      "relation": "similar_electronegativity",
+      "data": {
+        "relation": "similar_electronegativity",
+        "weight": 0.9300000000000002
+      }
+    },
+    {
+      "source": "element_Si",
+      "target": "element_Cu",
+      "relation": "similar_electronegativity",
+      "data": {
+        "relation": "similar_electronegativity",
+        "weight": 1.0
+      }
+    },
+    {
+      "source": "element_Si",
+      "target": "element_Zn",
+      "relation": "similar_electronegativity",
+      "data": {
+        "relation": "similar_electronegativity",
+        "weight": 0.75
+      }
+    },
+    {
+      "source": "element_Si",
+      "target": "element_Al",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period",
+        "weight": 0.7100000000000002
+      }
+    },
+    {
+      "source": "element_Si",
+      "target": "element_B",
+      "relation": "similar_electronegativity",
+      "data": {
+        "relation": "similar_electronegativity",
+        "weight": 0.8599999999999999
+      }
+    },
+    {
+      "source": "element_B",
+      "target": "element_H",
+      "relation": "similar_electronegativity",
+      "data": {
+        "relation": "similar_electronegativity",
+        "weight": 0.8399999999999999
+      }
+    },
+    {
+      "source": "element_B",
+      "target": "element_C",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period"
+      }
+    },
+    {
+      "source": "element_B",
+      "target": "element_N",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period"
+      }
+    },
+    {
+      "source": "element_B",
+      "target": "element_O",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period"
+      }
+    },
+    {
+      "source": "element_B",
+      "target": "element_F",
+      "relation": "same_period",
+      "data": {
+        "relation": "same_period"
+      }
+    },
+    {
+      "source": "element_B",
+      "target": "element_P",
+      "relation": "similar_electronegativity",
+      "data": {
+        "relation": "similar_electronegativity",
+        "weight": 0.8500000000000001
+      }
+    },
+    {
+      "source": "element_B",
+      "target": "element_Fe",
+      "relation": "similar_electronegativity",
+      "data": {
+        "relation": "similar_electronegativity",
+        "weight": 0.79
+      }
+    },
+    {
+      "source": "element_B",
+      "target": "element_Cu",
+      "relation": "similar_electronegativity",
+      "data": {
+        "relation": "similar_electronegativity",
+        "weight": 0.8599999999999999
+      }
+    },
+    {
+      "source": "element_B",
+      "target": "element_Zn",
+      "relation": "similar_electronegativity",
+      "data": {
+        "relation": "similar_electronegativity",
+        "weight": 0.6099999999999999
+      }
+    },
+    {
+      "source": "element_B",
+      "target": "element_Al",
+      "relation": "same_group",
+      "data": {
+        "relation": "same_group",
+        "weight": 0.5700000000000001
+      }
+    },
+    {
+      "source": "element_B",
+      "target": "element_Si",
+      "relation": "similar_electronegativity",
+      "data": {
+        "relation": "similar_electronegativity",
+        "weight": 0.8599999999999999
+      }
+    },
+    {
+      "source": "class_drug",
+      "target": "class_nsaids",
+      "relation": "has_subclass",
+      "data": {
+        "relation": "has_subclass"
+      }
+    },
+    {
+      "source": "class_drug",
+      "target": "class_antibiotics",
+      "relation": "has_subclass",
+      "data": {
+        "relation": "has_subclass"
+      }
+    },
+    {
+      "source": "class_drug",
+      "target": "class_antiviral",
+      "relation": "has_subclass",
+      "data": {
+        "relation": "has_subclass"
+      }
+    },
+    {
+      "source": "class_drug",
+      "target": "class_antineoplastic",
+      "relation": "has_subclass",
+      "data": {
+        "relation": "has_subclass"
+      }
+    },
+    {
+      "source": "class_drug",
+      "target": "class_cardiovascular",
+      "relation": "has_subclass",
+      "data": {
+        "relation": "has_subclass"
+      }
+    },
+    {
+      "source": "class_drug",
+      "target": "class_psychoactive",
+      "relation": "has_subclass",
+      "data": {
+        "relation": "has_subclass"
+      }
+    },
+    {
+      "source": "class_nsaids",
+      "target": "drug_aspirin",
+      "relation": "instance_of",
+      "data": {
+        "relation": "instance_of"
+      }
+    },
+    {
+      "source": "class_nsaids",
+      "target": "drug_ibuprofen",
+      "relation": "instance_of",
+      "data": {
+        "relation": "instance_of"
+      }
+    },
+    {
+      "source": "class_antibiotics",
+      "target": "drug_penicillin",
+      "relation": "instance_of",
+      "data": {
+        "relation": "instance_of"
+      }
+    },
+    {
+      "source": "class_psychoactive",
+      "target": "drug_caffeine",
+      "relation": "instance_of",
+      "data": {
+        "relation": "instance_of"
+      }
+    },
+    {
+      "source": "fg_carboxylic_acid",
+      "target": "fg_ester",
+      "relation": "can_form",
+      "data": {
+        "relation": "can_form",
+        "description": "酯化反应"
+      }
+    },
+    {
+      "source": "fg_carboxylic_acid",
+      "target": "fg_amide",
+      "relation": "can_form",
+      "data": {
+        "relation": "can_form",
+        "description": "酰胺化反应"
+      }
+    },
+    {
+      "source": "fg_alcohol",
+      "target": "fg_ester",
+      "relation": "can_form",
+      "data": {
+        "relation": "can_form",
+        "description": "酯化反应"
+      }
+    },
+    {
+      "source": "fg_alcohol",
+      "target": "fg_carboxylic_acid",
+      "relation": "related",
+      "data": {
+        "relation": "related",
+        "description": "羧酸还原"
+      }
+    },
+    {
+      "source": "fg_amine",
+      "target": "fg_amide",
+      "relation": "can_form",
+      "data": {
+        "relation": "can_form",
+        "description": "酰胺化反应"
+      }
+    },
+    {
+      "source": "fg_aromatic",
+      "target": "fg_halogen",
+      "relation": "can_react",
+      "data": {
+        "relation": "can_react",
+        "description": "卤化反应"
+      }
+    },
+    {
+      "source": "fg_alkene",
+      "target": "fg_alcohol",
+      "relation": "can_form",
+      "data": {
+        "relation": "can_form",
+        "description": "水合反应"
+      }
+    },
+    {
+      "source": "fg_alkyne",
+      "target": "fg_alkene",
+      "relation": "can_reduce",
+      "data": {
+        "relation": "can_reduce",
+        "description": "部分还原"
+      }
+    },
+    {
+      "source": "drug_cat_B",
+      "target": "drug_aspirin",
+      "relation": "contains",
+      "data": {
+        "relation": "contains"
+      }
+    },
+    {
+      "source": "drug_cat_J",
+      "target": "drug_penicillin",
+      "relation": "contains",
+      "data": {
+        "relation": "contains"
+      }
+    },
+    {
+      "source": "drug_cat_M",
+      "target": "drug_ibuprofen",
+      "relation": "contains",
+      "data": {
+        "relation": "contains"
+      }
+    },
+    {
+      "source": "drug_cat_N",
+      "target": "drug_caffeine",
+      "relation": "contains",
+      "data": {
+        "relation": "contains"
+      }
+    },
+    {
+      "source": "prop_mw",
+      "target": "prop_logp",
+      "relation": "correlates",
+      "data": {
+        "relation": "correlates",
+        "description": "分子量影响脂溶性"
+      }
+    },
+    {
+      "source": "prop_tpsa",
+      "target": "prop_logp",
+      "relation": "anti_correlates",
+      "data": {
+        "relation": "anti_correlates",
+        "description": "极性与脂溶性负相关"
+      }
+    },
+    {
+      "source": "prop_hbd",
+      "target": "prop_tpsa",
+      "relation": "correlates",
+      "data": {
+        "relation": "correlates",
+        "description": "氢键供体增加极性"
+      }
+    },
+    {
+      "source": "prop_hba",
+      "target": "prop_tpsa",
+      "relation": "correlates",
+      "data": {
+        "relation": "correlates",
+        "description": "氢键受体增加极性"
+      }
+    },
+    {
+      "source": "prop_rotatable_bonds",
+      "target": "prop_mw",
+      "relation": "correlates",
+      "data": {
+        "relation": "correlates",
+        "description": "可旋转键反映分子大小"
+      }
+    },
+    {
+      "source": "prop_aromatic_rings",
+      "target": "prop_logp",
+      "relation": "correlates",
+      "data": {
+        "relation": "correlates",
+        "description": "芳香环增加疏水性"
+      }
+    }
+  ]
+}

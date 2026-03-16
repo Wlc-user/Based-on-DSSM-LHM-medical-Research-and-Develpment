@@ -1,0 +1,1259 @@
+{
+  "nodes": [
+    {
+      "id": "stage_hit_identification",
+      "type": "development_stage",
+      "data": {
+        "type": "development_stage",
+        "stage_id": "hit_identification",
+        "name": "先导化合物识别",
+        "phase": 1,
+        "description": "通过虚拟筛选、高通量筛选等方法发现活性化合物",
+        "success_rate": 0.001,
+        "time": "3-6个月",
+        "cost": "50-200万美元"
+      }
+    },
+    {
+      "id": "stage_hit_to_lead",
+      "type": "development_stage",
+      "data": {
+        "type": "development_stage",
+        "stage_id": "hit_to_lead",
+        "name": "先导化合物优化",
+        "phase": 2,
+        "description": "优化先导化合物的药效、选择性和ADMET性质",
+        "success_rate": 0.1,
+        "time": "6-12个月",
+        "cost": "200-500万美元"
+      }
+    },
+    {
+      "id": "stage_lead_optimization",
+      "type": "development_stage",
+      "data": {
+        "type": "development_stage",
+        "stage_id": "lead_optimization",
+        "name": "候选药物优化",
+        "phase": 3,
+        "description": "进一步优化药代动力学和安全性",
+        "success_rate": 0.3,
+        "time": "12-24个月",
+        "cost": "500-2000万美元"
+      }
+    },
+    {
+      "id": "stage_preclinical",
+      "type": "development_stage",
+      "data": {
+        "type": "development_stage",
+        "stage_id": "preclinical",
+        "name": "临床前研究",
+        "phase": 4,
+        "description": "体内外药效学、毒理学和药代动力学研究",
+        "success_rate": 0.7,
+        "time": "12-24个月",
+        "cost": "1000-5000万美元"
+      }
+    },
+    {
+      "id": "stage_phase1",
+      "type": "development_stage",
+      "data": {
+        "type": "development_stage",
+        "stage_id": "phase1",
+        "name": "I期临床试验",
+        "phase": 5,
+        "description": "健康志愿者安全性、耐受性和药代动力学研究",
+        "success_rate": 0.6,
+        "time": "6-12个月",
+        "cost": "1000-2000万美元"
+      }
+    },
+    {
+      "id": "stage_phase2",
+      "type": "development_stage",
+      "data": {
+        "type": "development_stage",
+        "stage_id": "phase2",
+        "name": "II期临床试验",
+        "phase": 6,
+        "description": "患者疗效和安全性评估",
+        "success_rate": 0.3,
+        "time": "12-24个月",
+        "cost": "2000-5000万美元"
+      }
+    },
+    {
+      "id": "stage_phase3",
+      "type": "development_stage",
+      "data": {
+        "type": "development_stage",
+        "stage_id": "phase3",
+        "name": "III期临床试验",
+        "phase": 7,
+        "description": "大规模疗效和安全性验证",
+        "success_rate": 0.5,
+        "time": "24-36个月",
+        "cost": "5000-2亿美元"
+      }
+    },
+    {
+      "id": "stage_nda_review",
+      "type": "development_stage",
+      "data": {
+        "type": "development_stage",
+        "stage_id": "nda_review",
+        "name": "新药申请审评",
+        "phase": 8,
+        "description": "监管机构审评和批准",
+        "success_rate": 0.8,
+        "time": "6-12个月",
+        "cost": "500-1000万美元"
+      }
+    },
+    {
+      "id": "stage_post_marketing",
+      "type": "development_stage",
+      "data": {
+        "type": "development_stage",
+        "stage_id": "post_marketing",
+        "name": "上市后监测",
+        "phase": 9,
+        "description": "上市后安全性监测和真实世界证据收集",
+        "success_rate": 1.0,
+        "time": "持续",
+        "cost": "每年500-2000万美元"
+      }
+    },
+    {
+      "id": "decision_go_no_go_1",
+      "type": "decision_point",
+      "data": {
+        "type": "decision_point",
+        "dp_id": "go_no_go_1",
+        "name": "GO/NO-GO决策点1",
+        "stage": "hit_to_lead",
+        "criteria": [
+          "活性",
+          "选择性",
+          "专利性"
+        ]
+      }
+    },
+    {
+      "id": "decision_go_no_go_2",
+      "type": "decision_point",
+      "data": {
+        "type": "decision_point",
+        "dp_id": "go_no_go_2",
+        "name": "GO/NO-GO决策点2",
+        "stage": "lead_optimization",
+        "criteria": [
+          "ADMET",
+          "安全性",
+          "药效"
+        ]
+      }
+    },
+    {
+      "id": "decision_go_no_go_3",
+      "type": "decision_point",
+      "data": {
+        "type": "decision_point",
+        "dp_id": "go_no_go_3",
+        "name": "GO/NO-GO决策点3",
+        "stage": "preclinical",
+        "criteria": [
+          "毒理学",
+          "药代动力学",
+          "临床潜力"
+        ]
+      }
+    },
+    {
+      "id": "decision_go_no_go_4",
+      "type": "decision_point",
+      "data": {
+        "type": "decision_point",
+        "dp_id": "go_no_go_4",
+        "name": "GO/NO-GO决策点4",
+        "stage": "phase2",
+        "criteria": [
+          "疗效",
+          "安全性",
+          "商业潜力"
+        ]
+      }
+    },
+    {
+      "id": "tox_genotoxicity",
+      "type": "toxicology",
+      "data": {
+        "type": "toxicology",
+        "tox_id": "genotoxicity",
+        "name": "遗传毒性",
+        "description": "DNA损伤、染色体畸变、基因突变",
+        "assays": [
+          "Ames试验",
+          "染色体畸变试验",
+          "小鼠淋巴瘤试验"
+        ],
+        "regulatory": "ICH S2(R1)",
+        "critical": true
+      }
+    },
+    {
+      "id": "tox_carcinogenicity",
+      "type": "toxicology",
+      "data": {
+        "type": "toxicology",
+        "tox_id": "carcinogenicity",
+        "name": "致癌性",
+        "description": "长期暴露下的肿瘤形成风险",
+        "assays": [
+          "转基因小鼠模型",
+          "大鼠长期毒性试验"
+        ],
+        "regulatory": "ICH S1",
+        "critical": true
+      }
+    },
+    {
+      "id": "tox_reproductive_toxicity",
+      "type": "toxicology",
+      "data": {
+        "type": "toxicology",
+        "tox_id": "reproductive_toxicity",
+        "name": "生殖毒性",
+        "description": "对生育能力和后代的影响",
+        "assays": [
+          "生殖毒性试验",
+          "胚胎-胎仔毒性试验"
+        ],
+        "regulatory": "ICH S5(R3)",
+        "critical": true
+      }
+    },
+    {
+      "id": "tox_developmental_toxicity",
+      "type": "toxicology",
+      "data": {
+        "type": "toxicology",
+        "tox_id": "developmental_toxicity",
+        "name": "发育毒性",
+        "description": "对胚胎和胎仔发育的影响",
+        "assays": [
+          "胚胎发育毒性试验"
+        ],
+        "regulatory": "ICH S5(R3)",
+        "critical": true
+      }
+    },
+    {
+      "id": "tox_cardiovascular_toxicity",
+      "type": "toxicology",
+      "data": {
+        "type": "toxicology",
+        "tox_id": "cardiovascular_toxicity",
+        "name": "心血管毒性",
+        "description": "对心脏和血管系统的损害",
+        "assays": [
+          "心电图监测",
+          "血压测量",
+          "心脏组织病理"
+        ],
+        "regulatory": "ICH S7A",
+        "critical": true
+      }
+    },
+    {
+      "id": "tox_hepatotoxicity",
+      "type": "toxicology",
+      "data": {
+        "type": "toxicology",
+        "tox_id": "hepatotoxicity",
+        "name": "肝毒性",
+        "description": "对肝脏的损害",
+        "assays": [
+          "肝酶检测",
+          "肝组织病理",
+          "胆汁淤积评估"
+        ],
+        "regulatory": "ICH S3A",
+        "critical": true
+      }
+    },
+    {
+      "id": "tox_nephrotoxicity",
+      "type": "toxicology",
+      "data": {
+        "type": "toxicology",
+        "tox_id": "nephrotoxicity",
+        "name": "肾毒性",
+        "description": "对肾脏的损害",
+        "assays": [
+          "肾功能检测",
+          "肾组织病理",
+          "尿液分析"
+        ],
+        "regulatory": "ICH S3A",
+        "critical": true
+      }
+    },
+    {
+      "id": "tox_neurotoxicity",
+      "type": "toxicology",
+      "data": {
+        "type": "toxicology",
+        "tox_id": "neurotoxicity",
+        "name": "神经毒性",
+        "description": "对神经系统的损害",
+        "assays": [
+          "行为测试",
+          "神经病理检查",
+          "神经递质分析"
+        ],
+        "regulatory": "ICH S7",
+        "critical": true
+      }
+    },
+    {
+      "id": "tox_immunotoxicity",
+      "type": "toxicology",
+      "data": {
+        "type": "toxicology",
+        "tox_id": "immunotoxicity",
+        "name": "免疫毒性",
+        "description": "对免疫系统的损害",
+        "assays": [
+          "免疫器官病理",
+          "免疫细胞计数",
+          "抗体产生评估"
+        ],
+        "regulatory": "ICH S8",
+        "critical": true
+      }
+    },
+    {
+      "id": "tox_phototoxicity",
+      "type": "toxicology",
+      "data": {
+        "type": "toxicology",
+        "tox_id": "phototoxicity",
+        "name": "光毒性",
+        "description": "光照诱导的毒性反应",
+        "assays": [
+          "3T3中性红摄取试验",
+          "体内光毒性试验"
+        ],
+        "regulatory": "ICH S10",
+        "critical": false
+      }
+    },
+    {
+      "id": "strategy_in_silico",
+      "type": "toxicology_strategy",
+      "data": {
+        "type": "toxicology_strategy",
+        "strat_id": "in_silico",
+        "name": "计算机预测",
+        "methods": [
+          "QSAR",
+          "分子对接",
+          "机器学习"
+        ],
+        "cost": "低",
+        "time": "快"
+      }
+    },
+    {
+      "id": "strategy_in_vitro",
+      "type": "toxicology_strategy",
+      "data": {
+        "type": "toxicology_strategy",
+        "strat_id": "in_vitro",
+        "name": "体外试验",
+        "methods": [
+          "细胞毒性",
+          "酶抑制",
+          "转基因细胞"
+        ],
+        "cost": "中",
+        "time": "中"
+      }
+    },
+    {
+      "id": "strategy_in_vivo",
+      "type": "toxicology_strategy",
+      "data": {
+        "type": "toxicology_strategy",
+        "strat_id": "in_vivo",
+        "name": "体内试验",
+        "methods": [
+          "急性毒性",
+          "亚慢性毒性",
+          "慢性毒性"
+        ],
+        "cost": "高",
+        "time": "慢"
+      }
+    },
+    {
+      "id": "strategy_clinical_monitoring",
+      "type": "toxicology_strategy",
+      "data": {
+        "type": "toxicology_strategy",
+        "strat_id": "clinical_monitoring",
+        "name": "临床监测",
+        "methods": [
+          "不良反应报告",
+          "生物标志物"
+        ],
+        "cost": "中",
+        "time": "持续"
+      }
+    },
+    {
+      "id": "trial_study_design",
+      "type": "clinical_trial_element",
+      "data": {
+        "type": "clinical_trial_element",
+        "elem_id": "study_design",
+        "name": "试验设计",
+        "category": "design",
+        "elements": [
+          "随机化",
+          "盲法",
+          "对照组",
+          "样本量计算"
+        ]
+      }
+    },
+    {
+      "id": "trial_endpoints",
+      "type": "clinical_trial_element",
+      "data": {
+        "type": "clinical_trial_element",
+        "elem_id": "endpoints",
+        "name": "终点指标",
+        "category": "outcome",
+        "elements": [
+          "主要终点",
+          "次要终点",
+          "安全性终点",
+          "探索性终点"
+        ]
+      }
+    },
+    {
+      "id": "trial_patient_population",
+      "type": "clinical_trial_element",
+      "data": {
+        "type": "clinical_trial_element",
+        "elem_id": "patient_population",
+        "name": "受试者人群",
+        "category": "population",
+        "elements": [
+          "纳入标准",
+          "排除标准",
+          "分层因素",
+          "代表性"
+        ]
+      }
+    },
+    {
+      "id": "trial_statistical_analysis",
+      "type": "clinical_trial_element",
+      "data": {
+        "type": "clinical_trial_element",
+        "elem_id": "statistical_analysis",
+        "name": "统计分析",
+        "category": "analysis",
+        "elements": [
+          "假设检验",
+          "功效分析",
+          "多重性校正",
+          "亚组分析"
+        ]
+      }
+    },
+    {
+      "id": "trial_regulatory_compliance",
+      "type": "clinical_trial_element",
+      "data": {
+        "type": "clinical_trial_element",
+        "elem_id": "regulatory_compliance",
+        "name": "法规合规",
+        "category": "regulatory",
+        "elements": [
+          "伦理审查",
+          "知情同意",
+          "GCP合规",
+          "数据管理"
+        ]
+      }
+    },
+    {
+      "id": "failure_efficacy_failure",
+      "type": "trial_failure_reason",
+      "data": {
+        "type": "trial_failure_reason",
+        "reason_id": "efficacy_failure",
+        "name": "疗效不足",
+        "frequency": 0.4,
+        "phase": "II/III"
+      }
+    },
+    {
+      "id": "failure_safety_failure",
+      "type": "trial_failure_reason",
+      "data": {
+        "type": "trial_failure_reason",
+        "reason_id": "safety_failure",
+        "name": "安全性问题",
+        "frequency": 0.3,
+        "phase": "I-III"
+      }
+    },
+    {
+      "id": "failure_commercial_failure",
+      "type": "trial_failure_reason",
+      "data": {
+        "type": "trial_failure_reason",
+        "reason_id": "commercial_failure",
+        "name": "商业化失败",
+        "frequency": 0.2,
+        "phase": "III"
+      }
+    },
+    {
+      "id": "failure_regulatory_failure",
+      "type": "trial_failure_reason",
+      "data": {
+        "type": "trial_failure_reason",
+        "reason_id": "regulatory_failure",
+        "name": "监管失败",
+        "frequency": 0.1,
+        "phase": "III"
+      }
+    },
+    {
+      "id": "target_COX1",
+      "type": "酶",
+      "data": {
+        "target_id": "COX1",
+        "name": "环氧合酶1",
+        "type": "酶",
+        "family": "环氧合酶",
+        "diseases": [
+          "炎症",
+          "疼痛"
+        ]
+      }
+    },
+    {
+      "id": "target_COX2",
+      "type": "酶",
+      "data": {
+        "target_id": "COX2",
+        "name": "环氧合酶2",
+        "type": "酶",
+        "family": "环氧合酶",
+        "diseases": [
+          "炎症",
+          "疼痛",
+          "癌症"
+        ]
+      }
+    },
+    {
+      "id": "target_A2A",
+      "type": "GPCR",
+      "data": {
+        "target_id": "A2A",
+        "name": "腺苷A2A受体",
+        "type": "GPCR",
+        "family": "嘌呤受体",
+        "diseases": [
+          "帕金森病",
+          "睡眠障碍"
+        ]
+      }
+    },
+    {
+      "id": "target_EGFR",
+      "type": "RTK",
+      "data": {
+        "target_id": "EGFR",
+        "name": "表皮生长因子受体",
+        "type": "RTK",
+        "family": "受体酪氨酸激酶",
+        "diseases": [
+          "肺癌",
+          "乳腺癌"
+        ]
+      }
+    },
+    {
+      "id": "target_VEGFR",
+      "type": "RTK",
+      "data": {
+        "target_id": "VEGFR",
+        "name": "血管内皮生长因子受体",
+        "type": "RTK",
+        "family": "受体酪氨酸激酶",
+        "diseases": [
+          "癌症",
+          "AMD"
+        ]
+      }
+    },
+    {
+      "id": "target_PPARγ",
+      "type": "核受体",
+      "data": {
+        "target_id": "PPARγ",
+        "name": "过氧化物酶体增殖物激活受体γ",
+        "type": "核受体",
+        "family": "核受体",
+        "diseases": [
+          "糖尿病",
+          "代谢综合征"
+        ]
+      }
+    },
+    {
+      "id": "target_HMGCS",
+      "type": "酶",
+      "data": {
+        "target_id": "HMGCS",
+        "name": "HMG-CoA合成酶",
+        "type": "酶",
+        "family": "胆固醇合成酶",
+        "diseases": [
+          "高胆固醇血症"
+        ]
+      }
+    },
+    {
+      "id": "target_ACE",
+      "type": "酶",
+      "data": {
+        "target_id": "ACE",
+        "name": "血管紧张素转换酶",
+        "type": "酶",
+        "family": "金属蛋白酶",
+        "diseases": [
+          "高血压",
+          "心力衰竭"
+        ]
+      }
+    },
+    {
+      "id": "disease_inflammation",
+      "type": null,
+      "data": {
+        "disease_id": "inflammation",
+        "name": "炎症",
+        "category": "免疫系统",
+        "prevalence": "高"
+      }
+    },
+    {
+      "id": "disease_pain",
+      "type": null,
+      "data": {
+        "disease_id": "pain",
+        "name": "疼痛",
+        "category": "神经系统",
+        "prevalence": "高"
+      }
+    },
+    {
+      "id": "disease_cancer",
+      "type": null,
+      "data": {
+        "disease_id": "cancer",
+        "name": "癌症",
+        "category": "肿瘤",
+        "prevalence": "中"
+      }
+    },
+    {
+      "id": "disease_diabetes",
+      "type": null,
+      "data": {
+        "disease_id": "diabetes",
+        "name": "糖尿病",
+        "category": "代谢疾病",
+        "prevalence": "高"
+      }
+    },
+    {
+      "id": "disease_hypertension",
+      "type": null,
+      "data": {
+        "disease_id": "hypertension",
+        "name": "高血压",
+        "category": "心血管疾病",
+        "prevalence": "高"
+      }
+    },
+    {
+      "id": "disease_parkinsons",
+      "type": null,
+      "data": {
+        "disease_id": "parkinsons",
+        "name": "帕金森病",
+        "category": "神经退行性疾病",
+        "prevalence": "低"
+      }
+    },
+    {
+      "id": "disease_amd",
+      "type": null,
+      "data": {
+        "disease_id": "amd",
+        "name": "年龄相关性黄斑变性",
+        "category": "眼科疾病",
+        "prevalence": "中"
+      }
+    },
+    {
+      "id": "admet_absorption",
+      "type": null,
+      "data": {
+        "prop_id": "absorption",
+        "name": "吸收",
+        "abbrev": "A",
+        "description": "药物从给药部位进入体循环的能力",
+        "key_factors": [
+          "溶解度",
+          "通透性",
+          "稳定性"
+        ],
+        "prediction_methods": [
+          "Caco-2",
+          "PAMPA",
+          "计算模型"
+        ]
+      }
+    },
+    {
+      "id": "admet_distribution",
+      "type": null,
+      "data": {
+        "prop_id": "distribution",
+        "name": "分布",
+        "abbrev": "D",
+        "description": "药物在体内各组织和器官的分布",
+        "key_factors": [
+          "血浆蛋白结合",
+          "组织亲和性",
+          "血脑屏障通透"
+        ],
+        "prediction_methods": [
+          "血浆蛋白结合率",
+          "组织分布模型"
+        ]
+      }
+    },
+    {
+      "id": "admet_metabolism",
+      "type": null,
+      "data": {
+        "prop_id": "metabolism",
+        "name": "代谢",
+        "abbrev": "M",
+        "description": "药物在体内的生物转化过程",
+        "key_factors": [
+          "CYP酶",
+          "UGT酶",
+          "其他代谢酶"
+        ],
+        "prediction_methods": [
+          "体外酶抑制",
+          "微粒体代谢",
+          "计算模型"
+        ]
+      }
+    },
+    {
+      "id": "admet_excretion",
+      "type": null,
+      "data": {
+        "prop_id": "excretion",
+        "name": "排泄",
+        "abbrev": "E",
+        "description": "药物及其代谢物从体内的清除",
+        "key_factors": [
+          "肾清除",
+          "胆汁排泄",
+          "半衰期"
+        ],
+        "prediction_methods": [
+          "肾清除模型",
+          "胆汁排泄研究"
+        ]
+      }
+    },
+    {
+      "id": "admet_toxicity",
+      "type": null,
+      "data": {
+        "prop_id": "toxicity",
+        "name": "毒性",
+        "abbrev": "T",
+        "description": "药物潜在的毒性反应",
+        "key_factors": [
+          "剂量依赖性",
+          "靶器官毒性",
+          "免疫毒性"
+        ],
+        "prediction_methods": [
+          "体外毒性试验",
+          "体内毒性试验",
+          "计算毒性预测"
+        ]
+      }
+    },
+    {
+      "id": "interaction_pharmacokinetic",
+      "type": null,
+      "data": {
+        "int_id": "pharmacokinetic",
+        "name": "药代动力学相互作用",
+        "subtypes": [
+          "CYP抑制",
+          "CYP诱导",
+          "转运体抑制",
+          "蛋白结合位移"
+        ],
+        "severity": "中-高"
+      }
+    },
+    {
+      "id": "interaction_pharmacodynamic",
+      "type": null,
+      "data": {
+        "int_id": "pharmacodynamic",
+        "name": "药效学相互作用",
+        "subtypes": [
+          "协同作用",
+          "拮抗作用",
+          "相加作用"
+        ],
+        "severity": "中"
+      }
+    },
+    {
+      "id": "interaction_toxicity_interaction",
+      "type": null,
+      "data": {
+        "int_id": "toxicity_interaction",
+        "name": "毒性相互作用",
+        "subtypes": [
+          "协同毒性",
+          "肾毒性增强",
+          "肝毒性增强"
+        ],
+        "severity": "高"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "stage_hit_identification",
+      "target": "stage_hit_to_lead",
+      "relation": "leads_to",
+      "data": {
+        "relation": "leads_to",
+        "description": "研发流程顺序"
+      }
+    },
+    {
+      "source": "stage_hit_to_lead",
+      "target": "stage_lead_optimization",
+      "relation": "leads_to",
+      "data": {
+        "relation": "leads_to",
+        "description": "研发流程顺序"
+      }
+    },
+    {
+      "source": "stage_hit_to_lead",
+      "target": "decision_go_no_go_1",
+      "relation": "has_decision",
+      "data": {
+        "relation": "has_decision"
+      }
+    },
+    {
+      "source": "stage_lead_optimization",
+      "target": "stage_preclinical",
+      "relation": "leads_to",
+      "data": {
+        "relation": "leads_to",
+        "description": "研发流程顺序"
+      }
+    },
+    {
+      "source": "stage_lead_optimization",
+      "target": "decision_go_no_go_2",
+      "relation": "has_decision",
+      "data": {
+        "relation": "has_decision"
+      }
+    },
+    {
+      "source": "stage_preclinical",
+      "target": "stage_phase1",
+      "relation": "leads_to",
+      "data": {
+        "relation": "leads_to",
+        "description": "研发流程顺序"
+      }
+    },
+    {
+      "source": "stage_preclinical",
+      "target": "decision_go_no_go_3",
+      "relation": "has_decision",
+      "data": {
+        "relation": "has_decision"
+      }
+    },
+    {
+      "source": "stage_phase1",
+      "target": "stage_phase2",
+      "relation": "leads_to",
+      "data": {
+        "relation": "leads_to",
+        "description": "研发流程顺序"
+      }
+    },
+    {
+      "source": "stage_phase2",
+      "target": "stage_phase3",
+      "relation": "leads_to",
+      "data": {
+        "relation": "leads_to",
+        "description": "研发流程顺序"
+      }
+    },
+    {
+      "source": "stage_phase2",
+      "target": "decision_go_no_go_4",
+      "relation": "has_decision",
+      "data": {
+        "relation": "has_decision"
+      }
+    },
+    {
+      "source": "stage_phase3",
+      "target": "stage_nda_review",
+      "relation": "leads_to",
+      "data": {
+        "relation": "leads_to",
+        "description": "研发流程顺序"
+      }
+    },
+    {
+      "source": "stage_nda_review",
+      "target": "stage_post_marketing",
+      "relation": "leads_to",
+      "data": {
+        "relation": "leads_to",
+        "description": "研发流程顺序"
+      }
+    },
+    {
+      "source": "tox_genotoxicity",
+      "target": "strategy_in_silico",
+      "relation": "assessed_by",
+      "data": {
+        "relation": "assessed_by",
+        "priority": "primary"
+      }
+    },
+    {
+      "source": "tox_genotoxicity",
+      "target": "strategy_in_vitro",
+      "relation": "assessed_by",
+      "data": {
+        "relation": "assessed_by",
+        "priority": "primary"
+      }
+    },
+    {
+      "source": "tox_carcinogenicity",
+      "target": "strategy_in_vivo",
+      "relation": "assessed_by",
+      "data": {
+        "relation": "assessed_by",
+        "priority": "primary"
+      }
+    },
+    {
+      "source": "tox_reproductive_toxicity",
+      "target": "strategy_in_vivo",
+      "relation": "assessed_by",
+      "data": {
+        "relation": "assessed_by",
+        "priority": "primary"
+      }
+    },
+    {
+      "source": "tox_developmental_toxicity",
+      "target": "strategy_in_vivo",
+      "relation": "assessed_by",
+      "data": {
+        "relation": "assessed_by",
+        "priority": "primary"
+      }
+    },
+    {
+      "source": "tox_cardiovascular_toxicity",
+      "target": "strategy_in_vitro",
+      "relation": "assessed_by",
+      "data": {
+        "relation": "assessed_by",
+        "priority": "primary"
+      }
+    },
+    {
+      "source": "tox_cardiovascular_toxicity",
+      "target": "strategy_in_vivo",
+      "relation": "assessed_by",
+      "data": {
+        "relation": "assessed_by",
+        "priority": "secondary"
+      }
+    },
+    {
+      "source": "tox_hepatotoxicity",
+      "target": "strategy_in_vitro",
+      "relation": "assessed_by",
+      "data": {
+        "relation": "assessed_by",
+        "priority": "primary"
+      }
+    },
+    {
+      "source": "tox_hepatotoxicity",
+      "target": "strategy_in_vivo",
+      "relation": "assessed_by",
+      "data": {
+        "relation": "assessed_by",
+        "priority": "secondary"
+      }
+    },
+    {
+      "source": "tox_nephrotoxicity",
+      "target": "strategy_in_vitro",
+      "relation": "assessed_by",
+      "data": {
+        "relation": "assessed_by",
+        "priority": "primary"
+      }
+    },
+    {
+      "source": "tox_nephrotoxicity",
+      "target": "strategy_in_vivo",
+      "relation": "assessed_by",
+      "data": {
+        "relation": "assessed_by",
+        "priority": "secondary"
+      }
+    },
+    {
+      "source": "tox_neurotoxicity",
+      "target": "strategy_in_vivo",
+      "relation": "assessed_by",
+      "data": {
+        "relation": "assessed_by",
+        "priority": "primary"
+      }
+    },
+    {
+      "source": "tox_immunotoxicity",
+      "target": "strategy_in_vivo",
+      "relation": "assessed_by",
+      "data": {
+        "relation": "assessed_by",
+        "priority": "primary"
+      }
+    },
+    {
+      "source": "tox_phototoxicity",
+      "target": "strategy_in_vitro",
+      "relation": "assessed_by",
+      "data": {
+        "relation": "assessed_by",
+        "priority": "primary"
+      }
+    },
+    {
+      "source": "target_COX1",
+      "target": "disease_inflammation",
+      "relation": "治疗",
+      "data": {
+        "relation": "治疗",
+        "type": "target_disease"
+      }
+    },
+    {
+      "source": "target_COX1",
+      "target": "disease_pain",
+      "relation": "治疗",
+      "data": {
+        "relation": "治疗",
+        "type": "target_disease"
+      }
+    },
+    {
+      "source": "target_COX2",
+      "target": "disease_inflammation",
+      "relation": "治疗",
+      "data": {
+        "relation": "治疗",
+        "type": "target_disease"
+      }
+    },
+    {
+      "source": "target_COX2",
+      "target": "disease_pain",
+      "relation": "治疗",
+      "data": {
+        "relation": "治疗",
+        "type": "target_disease"
+      }
+    },
+    {
+      "source": "target_COX2",
+      "target": "disease_cancer",
+      "relation": "治疗",
+      "data": {
+        "relation": "治疗",
+        "type": "target_disease"
+      }
+    },
+    {
+      "source": "target_A2A",
+      "target": "disease_parkinsons",
+      "relation": "治疗",
+      "data": {
+        "relation": "治疗",
+        "type": "target_disease"
+      }
+    },
+    {
+      "source": "target_EGFR",
+      "target": "disease_cancer",
+      "relation": "治疗",
+      "data": {
+        "relation": "治疗",
+        "type": "target_disease"
+      }
+    },
+    {
+      "source": "target_VEGFR",
+      "target": "disease_cancer",
+      "relation": "治疗",
+      "data": {
+        "relation": "治疗",
+        "type": "target_disease"
+      }
+    },
+    {
+      "source": "target_VEGFR",
+      "target": "disease_amd",
+      "relation": "治疗",
+      "data": {
+        "relation": "治疗",
+        "type": "target_disease"
+      }
+    },
+    {
+      "source": "target_PPARγ",
+      "target": "disease_diabetes",
+      "relation": "治疗",
+      "data": {
+        "relation": "治疗",
+        "type": "target_disease"
+      }
+    },
+    {
+      "source": "target_HMGCS",
+      "target": "disease_hypertension",
+      "relation": "预防",
+      "data": {
+        "relation": "预防",
+        "type": "target_disease"
+      }
+    },
+    {
+      "source": "target_ACE",
+      "target": "disease_hypertension",
+      "relation": "治疗",
+      "data": {
+        "relation": "治疗",
+        "type": "target_disease"
+      }
+    },
+    {
+      "source": "admet_absorption",
+      "target": "admet_distribution",
+      "relation": "influences",
+      "data": {
+        "relation": "influences",
+        "description": "ADMET性质间的相互影响"
+      }
+    },
+    {
+      "source": "admet_distribution",
+      "target": "admet_metabolism",
+      "relation": "influences",
+      "data": {
+        "relation": "influences",
+        "description": "ADMET性质间的相互影响"
+      }
+    },
+    {
+      "source": "admet_metabolism",
+      "target": "admet_excretion",
+      "relation": "influences",
+      "data": {
+        "relation": "influences",
+        "description": "ADMET性质间的相互影响"
+      }
+    },
+    {
+      "source": "admet_excretion",
+      "target": "admet_toxicity",
+      "relation": "influences",
+      "data": {
+        "relation": "influences",
+        "description": "ADMET性质间的相互影响"
+      }
+    }
+  ],
+  "metadata": {
+    "total_nodes": 59,
+    "total_edges": 42,
+    "node_types": {
+      "development_stage": 9,
+      "decision_point": 4,
+      "toxicology": 10,
+      "toxicology_strategy": 4,
+      "clinical_trial_element": 5,
+      "trial_failure_reason": 4,
+      "酶": 4,
+      "GPCR": 1,
+      "RTK": 2,
+      "核受体": 1,
+      "unknown": 15
+    },
+    "created_date": "2026-03-16"
+  }
+}

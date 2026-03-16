@@ -1,0 +1,318 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>分子相似性搜索</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        .molecule-image {
+            max-width: 200px;
+            max-height: 200px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .result-card {
+            transition: all 0.3s;
+        }
+        .result-card:hover {
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .loading {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">🧬 分子相似性检索系统</a>
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link" href="/">首页</a>
+                <a class="nav-link active" href="/search">相似性搜索</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>🔍 分子搜索</h5>
+                    </div>
+                    <div class="card-body">
+                        <form id="searchForm">
+                            <div class="mb-3">
+                                <label for="smiles" class="form-label">SMILES字符串</label>
+                                <input type="text" class="form-control" id="smiles"
+                                       placeholder="输入分子SMILES，如: CC(=O)OC1=CC=CC=C1C(=O)O"
+                                       required>
+                                <div class="form-text" id="smilesHelp"></div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="threshold" class="form-label">相似度阈值</label>
+                                <input type="range" class="form-range" id="threshold"
+                                       min="0.1" max="1.0" step="0.1" value="0.3">
+                                <div class="text-center" id="thresholdValue">0.3</div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="topK" class="form-label">返回结果数</label>
+                                <select class="form-select" id="topK">
+                                    <option value="5">5</option>
+                                    <option value="10" selected>10</option>
+                                    <option value="15">15</option>
+                                    <option value="20">20</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="useLSH" checked>
+                                <label class="form-check-label" for="useLSH">使用LSH加速</label>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary w-100" id="searchBtn">
+                                <span class="spinner-border spinner-border-sm loading" role="status"></span>
+                                开始搜索
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="card mt-3" id="queryMoleculeCard" style="display: none;">
+                    <div class="card-header">
+                        <h6>查询分子</h6>
+                    </div>
+                    <div class="card-body text-center">
+                        <img id="queryMoleculeImg" class="molecule-image" alt="查询分子结构">
+                        <div class="mt-2">
+                            <small id="queryInfo" class="text-muted"></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <h5>📊 搜索结果</h5>
+                        <div>
+                            <button class="btn btn-sm btn-outline-primary" id="exportBtn" style="display: none;">
+                                导出结果
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div id="resultsContainer">
+                            <div class="text-center text-muted">
+                                <p>请输入分子SMILES并点击搜索</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 页面加载完成后的初始化
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeEventListeners();
+        });
+
+        function initializeEventListeners() {
+            // 阈值滑块变化
+            document.getElementById('threshold').addEventListener('input', function() {
+                document.getElementById('thresholdValue').textContent = this.value;
+            });
+
+            // 搜索表单提交
+            document.getElementById('searchForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                performSearch();
+            });
+
+            // SMILES输入验证
+            document.getElementById('smiles').addEventListener('input', function() {
+                validateSMILES(this.value);
+            });
+
+            // 导出按钮
+            document.getElementById('exportBtn').addEventListener('click', exportResults);
+        }
+
+        async function validateSMILES(smiles) {
+            if (!smiles.trim()) {
+                document.getElementById('smilesHelp').textContent = '';
+                return;
+            }
+
+            try {
+                const response = await fetch('/api/validate_smiles', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ smiles: smiles })
+                });
+
+                const result = await response.json();
+
+                if (result.valid) {
+                    document.getElementById('smilesHelp').innerHTML =
+                        `<span class="text-success">✓ 有效分子 | MW: ${result.properties.molecular_weight} | 公式: ${result.properties.formula}</span>`;
+                } else {
+                    document.getElementById('smilesHelp').innerHTML =
+                        `<span class="text-danger">✗ ${result.error}</span>`;
+                }
+            } catch (error) {
+                console.error('SMILES验证失败:', error);
+            }
+        }
+
+        async function performSearch() {
+            const smiles = document.getElementById('smiles').value.trim();
+            if (!smiles) return;
+
+            // 显示加载状态
+            const searchBtn = document.getElementById('searchBtn');
+            const spinner = searchBtn.querySelector('.loading');
+            searchBtn.disabled = true;
+            spinner.style.display = 'inline-block';
+
+            try {
+                const searchData = {
+                    smiles: smiles,
+                    threshold: parseFloat(document.getElementById('threshold').value),
+                    top_k: parseInt(document.getElementById('topK').value),
+                    use_lsh: document.getElementById('useLSH').checked
+                };
+
+                const response = await fetch('/api/search', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(searchData)
+                });
+
+                const result = await response.json();
+
+                if (response.ok) {
+                    displayResults(result);
+                    // 显示查询分子
+                    displayQueryMolecule(smiles);
+                } else {
+                    showError(result.error);
+                }
+
+            } catch (error) {
+                showError('搜索请求失败: ' + error.message);
+            } finally {
+                // 隐藏加载状态
+                searchBtn.disabled = false;
+                spinner.style.display = 'none';
+            }
+        }
+
+        function displayQueryMolecule(smiles) {
+            fetch(`/api/molecule_image/${encodeURIComponent(smiles)}`)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.image) {
+                        document.getElementById('queryMoleculeImg').src = data.image;
+                        document.getElementById('queryMoleculeCard').style.display = 'block';
+                        document.getElementById('queryInfo').textContent = `SMILES: ${smiles}`;
+                    }
+                })
+                .catch(error => console.error('获取分子图像失败:', error));
+        }
+
+        function displayResults(result) {
+            const container = document.getElementById('resultsContainer');
+
+            if (!result.results || result.results.length === 0) {
+                container.innerHTML = '<div class="alert alert-warning">未找到相似分子</div>';
+                return;
+            }
+
+            let html = `
+                <div class="alert alert-success">
+                    <strong>搜索完成!</strong> 找到 ${result.total_found} 个相似分子
+                    <br>处理时间: ${result.performance.elapsed_time.toFixed(3)}秒
+                    吞吐量: ${result.performance.throughput.toFixed(1)} 个/秒
+                </div>
+
+                <div class="row">
+            `;
+
+            result.results.forEach((item, index) => {
+                html += `
+                    <div class="col-md-6 mb-3">
+                        <div class="card result-card">
+                            <div class="card-body">
+                                <h6 class="card-title">${index + 1}. ${item.name}</h6>
+                                <div class="row">
+                                    <div class="col-4">
+                                        <img class="molecule-image w-100" src="/api/molecule_image/${encodeURIComponent(item.smiles)}"
+                                             alt="${item.name}" onerror="this.style.display='none'">
+                                    </div>
+                                    <div class="col-8">
+                                        <p class="mb-1"><strong>相似度:</strong> ${(item.weighted_similarity * 100).toFixed(1)}%</p>
+                                        <p class="mb-1"><small class="text-muted">类别: ${item.category}</small></p>
+                                        <p class="mb-1"><small class="text-muted">分子量: ${item.mw.toFixed(1)}</small></p>
+                                        <p class="mb-0"><small class="text-muted">SMILES: ${item.smiles.substring(0, 30)}${item.smiles.length > 30 ? '...' : ''}</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            });
+
+            html += '</div>';
+            container.innerHTML = html;
+
+            // 显示导出按钮
+            document.getElementById('exportBtn').style.display = 'block';
+            document.getElementById('exportBtn').onclick = () => exportResults(result.results);
+        }
+
+        function showError(message) {
+            const container = document.getElementById('resultsContainer');
+            container.innerHTML = `<div class="alert alert-danger">${message}</div>`;
+        }
+
+        function exportResults(results = null) {
+            if (!results) {
+                // 从当前显示的结果中获取
+                const resultCards = document.querySelectorAll('.result-card');
+                results = Array.from(resultCards).map(card => {
+                    // 这里需要解析卡片内容，暂时使用示例数据
+                    return {};
+                });
+            }
+
+            // 创建CSV内容
+            let csv = '候选分子,加权相似度,类别,分子量,SMILES\n';
+            results.forEach(result => {
+                csv += `"${result.name}",${result.weighted_similarity},"${result.category}",${result.mw},"${result.smiles}"\n`;
+            });
+
+            // 下载CSV
+            const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+            const link = document.createElement('a');
+            link.href = URL.createObjectURL(blob);
+            link.download = 'screening_results.csv';
+            link.click();
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+    

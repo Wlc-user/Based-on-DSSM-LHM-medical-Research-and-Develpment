@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>分子相似性检索系统</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hero-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 100px 0;
+        }
+        .feature-card {
+            transition: transform 0.3s;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">🧬 分子相似性检索系统</a>
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link active" href="/">首页</a>
+                <a class="nav-link" href="/search">相似性搜索</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="container text-center">
+            <h1 class="display-4 mb-4">分子相似性检索系统</h1>
+            <p class="lead mb-4">基于多尺度指纹融合和LSH加速的虚拟筛选平台</p>
+            <a href="/search" class="btn btn-light btn-lg">开始搜索</a>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card feature-card h-100">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">🔬 多尺度指纹</h5>
+                            <p class="card-text">融合ECFP2、ECFP4、ECFP6多尺度分子指纹，提供更准确的相似性计算</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card feature-card h-100">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">⚡ LSH加速</h5>
+                            <p class="card-text">基于局部敏感哈希的近似最近邻搜索，大幅提升检索速度</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card feature-card h-100">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">📊 智能可视化</h5>
+                            <p class="card-text">交互式图表展示，实时结果分析和导出功能</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2026 分子相似性检索系统. 基于多尺度指纹融合技术.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+    

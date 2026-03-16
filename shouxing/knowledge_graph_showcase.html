@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>化学知识图谱展示系统</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: 'Microsoft YaHei', sans-serif;
+            min-height: 100vh;
+        }
+        .card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            backdrop-filter: blur(10px);
+            background: rgba(255,255,255,0.95);
+        }
+        .hero-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 80px 0;
+            border-radius: 0 0 50px 50px;
+        }
+        .stat-card {
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+        }
+        .molecule-card {
+            transition: transform 0.3s ease;
+        }
+        .molecule-card:hover {
+            transform: translateY(-5px);
+        }
+        .concept-network {
+            background: rgba(255,255,255,0.05);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px 0;
+        }
+        .recommendation-badge {
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            margin: 2px;
+            display: inline-block;
+        }
+        .functional-group-tag {
+            background: linear-gradient(45deg, #4ecdc4, #44a08d);
+            color: white;
+            padding: 3px 8px;
+            border-radius: 15px;
+            font-size: 0.75em;
+            margin: 2px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <!-- 英雄区域 -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-4 fw-bold mb-4">🧠 化学知识图谱系统</h1>
+                    <p class="lead mb-4">智能分子分析与概念关联的革命性平台</p>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="stat-card">
+                                <h3 class="fw-bold">65</h3>
+                                <p class="mb-0">知识节点</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="stat-card">
+                                <h3 class="fw-bold">222</h3>
+                                <p class="mb-0">关联关系</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="stat-card">
+                                <h3 class="fw-bold">6</h3>
+                                <p class="mb-0">分析分子</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="stat-card">
+                                <h3 class="fw-bold">9</h3>
+                                <p class="mb-0">概念类型</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 主要内容 -->
+    <div class="container my-5">
+        <!-- 知识图谱统计 -->
+        <div class="row mb-5">
+            <div class="col-lg-8 mx-auto">
+                <div class="card">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="mb-0">📊 知识图谱统计</h5>
+                    </div>
+                    <div class="card-body">
+                        <canvas id="nodeTypeChart" width="400" height="200"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 分子分析展示 -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <h2 class="text-center mb-4 text-white">🔍 智能分子分析</h2>
+                <div class="row">
+                    <div class="col-lg-6 mb-4">
+                        <div class="card molecule-card h-100">
+                            <div class="card-header bg-success text-white">
+                                <h6 class="mb-0">阿司匹林</h6>
+                                <small>经典的非甾体抗炎药</small>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <p><strong>化学式:</strong> C9H8O4</p>
+                                        <p><strong>分子量:</strong> 180.16 g/mol</p>
+                                        <p><strong>官能团:</strong> 4 个</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p><strong>智能推荐:</strong> 2 条</p>
+                                        <p><strong>知识关联:</strong> 4 个概念</p>
+                                    </div>
+                                </div>
+                                <div class="mt-3">
+                                    <strong>官能团:</strong><br>
+                                    <span class="functional-group-tag">羧酸基</span><span class="functional-group-tag">酯基</span><span class="functional-group-tag">羟基</span>
+                                </div>
+                                <div class="mt-3">
+                                    <strong>推荐:</strong><br>
+                                    <span class="recommendation-badge">酯化反应</span><span class="recommendation-badge">亲电取代反应</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-4">
+                        <div class="card molecule-card h-100">
+                            <div class="card-header bg-success text-white">
+                                <h6 class="mb-0">咖啡因</h6>
+                                <small>中枢神经系统兴奋剂</small>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <p><strong>化学式:</strong> C8H10N4O2</p>
+                                        <p><strong>分子量:</strong> 194.19 g/mol</p>
+                                        <p><strong>官能团:</strong> 1 个</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p><strong>智能推荐:</strong> 0 条</p>
+                                        <p><strong>知识关联:</strong> 1 个概念</p>
+                                    </div>
+                                </div>
+                                <div class="mt-3">
+                                    <strong>官能团:</strong><br>
+                                    <span class="functional-group-tag">羟基</span>
+                                </div>
+                                <div class="mt-3">
+                                    <strong>推荐:</strong><br>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-4">
+                        <div class="card molecule-card h-100">
+                            <div class="card-header bg-success text-white">
+                                <h6 class="mb-0">布洛芬</h6>
+                                <small>常用止痛药</small>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <p><strong>化学式:</strong> C13H18O2</p>
+                                        <p><strong>分子量:</strong> 206.28 g/mol</p>
+                                        <p><strong>官能团:</strong> 4 个</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p><strong>智能推荐:</strong> 2 条</p>
+                                        <p><strong>知识关联:</strong> 4 个概念</p>
+                                    </div>
+                                </div>
+                                <div class="mt-3">
+                                    <strong>官能团:</strong><br>
+                                    <span class="functional-group-tag">羧酸基</span><span class="functional-group-tag">酯基</span><span class="functional-group-tag">羟基</span>
+                                </div>
+                                <div class="mt-3">
+                                    <strong>推荐:</strong><br>
+                                    <span class="recommendation-badge">酯化反应</span><span class="recommendation-badge">亲电取代反应</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-4">
+                        <div class="card molecule-card h-100">
+                            <div class="card-header bg-success text-white">
+                                <h6 class="mb-0">青霉素</h6>
+                                <small>β-内酰胺类抗生素</small>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <p><strong>化学式:</strong> C16H18N2O4S</p>
+                                        <p><strong>分子量:</strong> 334.4 g/mol</p>
+                                        <p><strong>官能团:</strong> 6 个</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p><strong>智能推荐:</strong> 2 条</p>
+                                        <p><strong>知识关联:</strong> 6 个概念</p>
+                                    </div>
+                                </div>
+                                <div class="mt-3">
+                                    <strong>官能团:</strong><br>
+                                    <span class="functional-group-tag">羧酸基</span><span class="functional-group-tag">酯基</span><span class="functional-group-tag">酰胺基</span>
+                                </div>
+                                <div class="mt-3">
+                                    <strong>推荐:</strong><br>
+                                    <span class="recommendation-badge">酯化反应</span><span class="recommendation-badge">亲电取代反应</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-4">
+                        <div class="card molecule-card h-100">
+                            <div class="card-header bg-success text-white">
+                                <h6 class="mb-0">维生素C</h6>
+                                <small>抗氧化维生素</small>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <p><strong>化学式:</strong> C6H8O6</p>
+                                        <p><strong>分子量:</strong> 176.12 g/mol</p>
+                                        <p><strong>官能团:</strong> 3 个</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p><strong>智能推荐:</strong> 1 条</p>
+                                        <p><strong>知识关联:</strong> 3 个概念</p>
+                                    </div>
+                                </div>
+                                <div class="mt-3">
+                                    <strong>官能团:</strong><br>
+                                    <span class="functional-group-tag">羧酸基</span><span class="functional-group-tag">酯基</span><span class="functional-group-tag">羟基</span>
+                                </div>
+                                <div class="mt-3">
+                                    <strong>推荐:</strong><br>
+                                    <span class="recommendation-badge">酯化反应</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-4">
+                        <div class="card molecule-card h-100">
+                            <div class="card-header bg-success text-white">
+                                <h6 class="mb-0">葡萄糖</h6>
+                                <small>单糖</small>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <p><strong>化学式:</strong> C6H12O6</p>
+                                        <p><strong>分子量:</strong> 180.16 g/mol</p>
+                                        <p><strong>官能团:</strong> 1 个</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p><strong>智能推荐:</strong> 0 条</p>
+                                        <p><strong>知识关联:</strong> 1 个概念</p>
+                                    </div>
+                                </div>
+                                <div class="mt-3">
+                                    <strong>官能团:</strong><br>
+                                    <span class="functional-group-tag">羟基</span>
+                                </div>
+                                <div class="mt-3">
+                                    <strong>推荐:</strong><br>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 概念关联网络 -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <h2 class="text-center mb-4 text-white">🔗 概念关联网络</h2>
+                <div class="row">
+                </div>
+            </div>
+        </div>
+
+        <!-- 概念关联网络 -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <h2 class="text-center mb-4 text-white">🔗 概念关联网络</h2>
+                <div class="row">
+
+                    <div class="col-lg-4 mb-4">
+                        <div class="card h-100">
+                            <div class="card-header bg-info text-white">
+                                <h6 class="mb-0">羧酸基</h6>
+                                <small>functional_group</small>
+                            </div>
+                            <div class="card-body">
+                                <p class="text-muted">具有酸性，可与碱反应生成盐</p>
+                                <div class="concept-network">
+                                    <strong>相关概念 (3):</strong>
+                                    <ul class="list-unstyled mt-2">
+                                        <li>• 羧酸基 (functional_group)</li><li>• 酯基 (functional_group)</li><li>• 酰胺基 (functional_group)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div class="card h-100">
+                            <div class="card-header bg-info text-white">
+                                <h6 class="mb-0">芳香环</h6>
+                                <small>functional_group</small>
+                            </div>
+                            <div class="card-body">
+                                <p class="text-muted">苯环结构，具有特殊稳定性和反应性</p>
+                                <div class="concept-network">
+                                    <strong>相关概念 (2):</strong>
+                                    <ul class="list-unstyled mt-2">
+                                        <li>• 芳香环 (functional_group)</li><li>• 卤素 (functional_group)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div class="card h-100">
+                            <div class="card-header bg-info text-white">
+                                <h6 class="mb-0">碳元素</h6>
+                                <small>element</small>
+                            </div>
+                            <div class="card-body">
+                                <p class="text-muted">有机化合物基础元素，可形成四价键</p>
+                                <div class="concept-network">
+                                    <strong>相关概念 (0):</strong>
+                                    <ul class="list-unstyled mt-2">
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 技术特性 -->
+        <div class="row mb-5">
+            <div class="col-lg-10 mx-auto">
+                <div class="card">
+                    <div class="card-header bg-warning text-dark">
+                        <h5 class="mb-0">⚡ 核心技术特性</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h6>🧬 多层次知识表示</h6>
+                                <ul>
+                                    <li>元素周期表知识网络</li>
+                                    <li>分子分类体系图谱</li>
+                                    <li>官能团关系网络</li>
+                                    <li>药物分类图谱</li>
+                                    <li>性质关联网络</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h6>🤖 智能推理能力</h6>
+                                <ul>
+                                    <li>上下文感知分析</li>
+                                    <li>关联概念推荐</li>
+                                    <li>性质预测推理</li>
+                                    <li>反应可能性评估</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 节点类型统计图表
+        const ctx = document.getElementById('nodeTypeChart').getContext('2d');
+        const nodeTypeData = {"element": 20, "molecule_class": 5, "molecule_subclass": 6, "functional_group": 9, "drug_category": 14, "drug": 4, "physical": 1, "physicochemical": 2, "structural": 4};
+
+        new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: Object.keys(nodeTypeData),
+                datasets: [{
+                    data: Object.values(nodeTypeData),
+                    backgroundColor: [
+                        '#FF6384', '#36A2EB', '#FFCE56', '#4BC0C0',
+                        '#9966FF', '#FF9F40', '#FF6384', '#C9CBCF'
+                    ],
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                    },
+                    title: {
+                        display: true,
+                        text: '知识图谱节点类型分布'
+                    }
+                }
+            }
+        });
+
+        // 添加动画效果
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.molecule-card');
+            cards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                setTimeout(() => {
+                    card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, index * 100);
+            });
+        });
+    </script>
+</body>
+</html>

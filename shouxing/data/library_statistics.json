@@ -1,0 +1,33 @@
+{
+  "total_compounds": 60,
+  "data_sources": {
+    "Enhanced_Dataset": 45,
+    "ZINC": 15
+  },
+  "categories": {
+    "NSAIDs": 6,
+    "甾体激素": 6,
+    "神经系统药": 5,
+    "糖尿病药": 5,
+    "其他": 5,
+    "ZINC_drug-like": 5,
+    "ZINC_lead-like": 5,
+    "ZINC_fragment-like": 5,
+    "抗生素": 4,
+    "抗病毒药": 4
+  },
+  "molecular_properties": {
+    "mw": {
+      "mean": 188.38333333333333,
+      "std": 36.83315182612435,
+      "min": 78.0,
+      "max": 256.0
+    },
+    "logp": {
+      "mean": 2.136666666666667,
+      "std": 0.3349508775857741,
+      "min": 1.2,
+      "max": 3.5
+    }
+  }
+}

@@ -1,0 +1,10 @@
+requests
+pubchempy
+chembl_webresource_client
+rdkit
+networkx
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
